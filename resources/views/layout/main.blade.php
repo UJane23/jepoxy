@@ -9,28 +9,28 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="layout/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/layout/img/favicon.ico">
 
     <!-- CSS
 	============================================ -->
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="layout/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/layout/css/vendor/bootstrap.min.css">
     <!-- Pe-icon-7-stroke CSS -->
-    <link rel="stylesheet" href="layout/css/vendor/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/layout/css/vendor/pe-icon-7-stroke.css">
     <!-- Font-awesome CSS -->
-    <link rel="stylesheet" href="layout/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="/layout/css/vendor/font-awesome.min.css">
     <!-- Slick slider css -->
-    <link rel="stylesheet" href="layout/css/plugins/slick.min.css">
+    <link rel="stylesheet" href="/layout/css/plugins/slick.min.css">
     <!-- animate css -->
-    <link rel="stylesheet" href="layout/css/plugins/animate.css">
+    <link rel="stylesheet" href="/layout/css/plugins/animate.css">
     <!-- Nice Select css -->
-    <link rel="stylesheet" href="layout/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="/layout/css/plugins/nice-select.css">
     <!-- jquery UI css -->
-    <link rel="stylesheet" href="layout/css/plugins/jqueryui.min.css">
+    <link rel="stylesheet" href="/layout/css/plugins/jqueryui.min.css">
     <!-- main style css -->
-    <link rel="stylesheet" href="layout/css/style.css">
+    <link rel="stylesheet" href="/layout/css/style.css">
 
 </head>
 
@@ -47,8 +47,8 @@
                     <!-- start logo area -->
                     <div class="col-lg-2">
                         <div class="logo">
-                            <a href="layout/index.html">
-                                <img src="layout/img/logo/logo.png" alt="Brand Logo">
+                            <a href="/">
+                                <img src="/layout/img/logo/logo.png" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
@@ -61,8 +61,8 @@
                                 <!-- main menu navbar start -->
                                 <nav class="desktop-menu">
                                     <ul>
-                                        <li><a href="contact-us.html">О нас</a></li>
-                                        <li class="position-static active"><a href="#">Каталог<i class="fa fa-angle-down"></i></a>
+                                        <li><a href="/about_us">О нас</a></li>
+                                        <li class="position-static active"><a href="/catalog">Каталог<i class="fa fa-angle-down"></i></a>
                                             <ul class="megamenu dropdown">
                                                 <li class="mega-title"><span>column 01</span>
                                                     <ul>
@@ -104,12 +104,12 @@
                                                 </li>
                                                 <li class="megamenu-banners d-none d-lg-block">
                                                     <a href="product-details.html">
-                                                        <img src="layout/img/banner/img1-static-menu.jpg" alt="">
+                                                        <img src="/layout/img/banner/img1-static-menu.jpg" alt="">
                                                     </a>
                                                 </li>
                                                 <li class="megamenu-banners d-none d-lg-block">
                                                     <a href="product-details.html">
-                                                        <img src="layout/img/banner/img2-static-menu.jpg" alt="">
+                                                        <img src="/layout/img/banner/img2-static-menu.jpg" alt="">
                                                     </a>
                                                 </li>
                                             </ul>
@@ -181,7 +181,7 @@
                     <div class="mobile-main-header">
                         <div class="mobile-logo">
                             <a href="index.html">
-                                <img src="layout/img/logo/logo.png" alt="Brand Logo">
+                                <img src="/layout/img/logo/logo.png" alt="Brand Logo">
                             </a>
                         </div>
                         <div class="mobile-menu-toggler">
@@ -231,8 +231,8 @@
                     <!-- mobile menu navigation start -->
                     <nav>
                         <ul class="mobile-menu">
-                            <li><a href="contact-us.html">О нас</a></li>
-                            <li class="menu-item-has-children"><a href="#">Каталог</a>
+                            <li><a href="/about_us">О нас</a></li>
+                            <li class="menu-item-has-children"><a href="/catalog">Каталог</a>
                                 <ul class="megamenu dropdown">
                                     <li class="mega-title menu-item-has-children"><a href="#">column 01</a>
                                         <ul class="dropdown">
@@ -348,7 +348,7 @@
                         <div class="widget-title">
                             <div class="widget-logo">
                                 <a href="index.html">
-                                    <img src="layout/img/logo/logo.png" alt="brand logo">
+                                    <img src="/layout/img/logo/logo.png" alt="brand logo">
                                 </a>
                             </div>
                         </div>
@@ -417,7 +417,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="footer-payment">
-                        <img src="layout/img/payment.png" alt="payment method">
+                        <img src="/layout/img/payment.png" alt="payment method">
                     </div>
                 </div>
             </div>
@@ -451,36 +451,36 @@
                         <div class="col-lg-5">
                             <div class="product-large-slider">
                                 <div class="pro-large-img img-zoom">
-                                    <img src="layout/img/product/product-details-img1.jpg" alt="product-details" />
+                                    <img src="/layout/img/product/product-details-img1.jpg" alt="product-details" />
                                 </div>
                                 <div class="pro-large-img img-zoom">
-                                    <img src="layout/img/product/product-details-img2.jpg" alt="product-details" />
+                                    <img src="/layout/img/product/product-details-img2.jpg" alt="product-details" />
                                 </div>
                                 <div class="pro-large-img img-zoom">
-                                    <img src="layout/img/product/product-details-img3.jpg" alt="product-details" />
+                                    <img src="/layout/img/product/product-details-img3.jpg" alt="product-details" />
                                 </div>
                                 <div class="pro-large-img img-zoom">
-                                    <img src="layout/img/product/product-details-img4.jpg" alt="product-details" />
+                                    <img src="/layout/img/product/product-details-img4.jpg" alt="product-details" />
                                 </div>
                                 <div class="pro-large-img img-zoom">
-                                    <img src="layout/img/product/product-details-img5.jpg" alt="product-details" />
+                                    <img src="/layout/img/product/product-details-img5.jpg" alt="product-details" />
                                 </div>
                             </div>
                             <div class="pro-nav slick-row-10 slick-arrow-style">
                                 <div class="pro-nav-thumb">
-                                    <img src="layout/img/product/product-details-img1.jpg" alt="product-details" />
+                                    <img src="/layout/img/product/product-details-img1.jpg" alt="product-details" />
                                 </div>
                                 <div class="pro-nav-thumb">
-                                    <img src="layout/img/product/product-details-img2.jpg" alt="product-details" />
+                                    <img src="/layout/img/product/product-details-img2.jpg" alt="product-details" />
                                 </div>
                                 <div class="pro-nav-thumb">
-                                    <img src="layout/img/product/product-details-img3.jpg" alt="product-details" />
+                                    <img src="/layout/img/product/product-details-img3.jpg" alt="product-details" />
                                 </div>
                                 <div class="pro-nav-thumb">
-                                    <img src="layout/img/product/product-details-img4.jpg" alt="product-details" />
+                                    <img src="/layout/img/product/product-details-img4.jpg" alt="product-details" />
                                 </div>
                                 <div class="pro-nav-thumb">
-                                    <img src="layout/img/product/product-details-img5.jpg" alt="product-details" />
+                                    <img src="/layout/img/product/product-details-img5.jpg" alt="product-details" />
                                 </div>
                             </div>
                         </div>
@@ -557,7 +557,7 @@
                         <li class="minicart-item">
                             <div class="minicart-thumb">
                                 <a href="product-details.html">
-                                    <img src="layout/img/cart/cart-1.jpg" alt="product">
+                                    <img src="/layout/img/cart/cart-1.jpg" alt="product">
                                 </a>
                             </div>
                             <div class="minicart-content">
@@ -574,7 +574,7 @@
                         <li class="minicart-item">
                             <div class="minicart-thumb">
                                 <a href="product-details.html">
-                                    <img src="layout/img/cart/cart-2.jpg" alt="product">
+                                    <img src="/layout/img/cart/cart-2.jpg" alt="product">
                                 </a>
                             </div>
                             <div class="minicart-content">
@@ -626,37 +626,37 @@
 ============================================ -->
 
 <!-- Modernizer JS -->
-<script src="layout/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="/layout/js/vendor/modernizr-3.6.0.min.js"></script>
 <!-- jQuery JS -->
-<script src="layout/js/vendor/jquery-3.3.1.min.js"></script>
+<script src="/layout/js/vendor/jquery-3.3.1.min.js"></script>
 <!-- Popper JS -->
-<script src="layout/js/vendor/popper.min.js"></script>
+<script src="/layout/js/vendor/popper.min.js"></script>
 <!-- Bootstrap JS -->
-<script src="layout/js/vendor/bootstrap.min.js"></script>
+<script src="/layout/js/vendor/bootstrap.min.js"></script>
 <!-- slick Slider JS -->
-<script src="layout/js/plugins/slick.min.js"></script>
+<script src="/layout/js/plugins/slick.min.js"></script>
 <!-- Countdown JS -->
-<script src="layout/js/plugins/countdown.min.js"></script>
+<script src="/layout/js/plugins/countdown.min.js"></script>
 <!-- Nice Select JS -->
-<script src="layout/js/plugins/nice-select.min.js"></script>
+<script src="/layout/js/plugins/nice-select.min.js"></script>
 <!-- jquery UI JS -->
-<script src="layout/js/plugins/jqueryui.min.js"></script>
+<script src="/layout/js/plugins/jqueryui.min.js"></script>
 <!-- Image zoom JS -->
-<script src="layout/js/plugins/image-zoom.min.js"></script>
+<script src="/layout/js/plugins/image-zoom.min.js"></script>
 <!-- Imagesloaded JS -->
-<script src="layout/js/plugins/imagesloaded.pkgd.min.js"></script>
+<script src="/layout/js/plugins/imagesloaded.pkgd.min.js"></script>
 <!-- Instagram feed JS -->
-<script src="layout/js/plugins/instagramfeed.min.js"></script>
+<script src="/layout/js/plugins/instagramfeed.min.js"></script>
 <!-- mailchimp active js -->
-<script src="layout/js/plugins/ajaxchimp.js"></script>
+<script src="/layout/js/plugins/ajaxchimp.js"></script>
 <!-- contact form dynamic js -->
-<script src="layout/js/plugins/ajax-mail.js"></script>
+<script src="/layout/js/plugins/ajax-mail.js"></script>
 <!-- google map api -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfmCVTjRI007pC1Yk2o2d_EhgkjTsFVN8"></script>
 <!-- google map active js -->
-<script src="layout/js/plugins/google-map.js"></script>
+<script src="/layout/js/plugins/google-map.js"></script>
 <!-- Main JS -->
-<script src="layout/js/main.js"></script>
+<script src="/layout/js/main.js"></script>
 </body>
 
 </html>

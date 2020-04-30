@@ -892,8 +892,8 @@
                                         <div class="product-item">
                                             <figure class="product-thumb">
                                                 <a href="product-details.html">
-                                                    <img class="pri-img" src="layout/img/product/product-15.jpg" alt="product">
-                                                    <img class="sec-img" src="layout/img/product/product-4.jpg" alt="product">
+                                                    <img class="pri-img" src="/layout/img/product/product-15.jpg" alt="product">
+                                                    <img class="sec-img" src="/layout/img/product/product-4.jpg" alt="product">
                                                 </a>
                                                 <div class="product-badge">
                                                     <div class="product-label new">
