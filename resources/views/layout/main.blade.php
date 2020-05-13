@@ -114,7 +114,6 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact-us.html">Новинки</a></li>
                                         <li><a href="contact-us.html">Оплата / доставка</a></li>
                                     </ul>
                                 </nav>
@@ -147,7 +146,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="wishlist.html">
+                                        <a href="/personal/wishlist">
                                             <i class="pe-7s-like"></i>
                                             <div class="notification">0</div>
                                         </a>
@@ -274,7 +273,6 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="contact-us.html">Новинки</a></li>
                             <li><a href="contact-us.html">Оплата / доставка</a></li>
                         </ul>
                     </nav>
@@ -613,7 +611,7 @@
                 </div>
 
                 <div class="minicart-button">
-                    <a href="cart.html"><i class="fa fa-shopping-cart"></i> View Cart</a>
+                    <a href="/personal/wishlist"><i class="fa fa-shopping-cart"></i> View Cart</a>
                     <a href="cart.html"><i class="fa fa-share"></i> Checkout</a>
                 </div>
             </div>
