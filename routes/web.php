@@ -19,3 +19,7 @@ Route::group(['prefix' =>'personal'], function (){
     Route::get('/wishlist', ['as' => 'wishlist_personal', 'uses' => 'PersonalController@wish']);
     Route::get('/cart', ['as' => 'cart_personal', 'uses' => 'PersonalController@cart']);
 });
+
+Route::group(['prefix' =>'admin'], function (){
+    Route::get('/', ['as' => 'admin', 'uses' => 'Admin\AdminController@index']);
+});
