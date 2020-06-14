@@ -22,4 +22,7 @@ Route::group(['prefix' =>'personal'], function (){
 
 Route::group(['prefix' =>'admin'], function (){
     Route::get('/', ['as' => 'admin', 'uses' => 'Admin\AdminController@index']);
+
+    Route::get('/catalog', ['as' => 'catalog_list', 'uses' => 'Admin\CatalogController@index']);
+    Route::get('/catalog/new', ['as' => 'product_new', 'uses' => 'Admin\CatalogController@new']);
 });
