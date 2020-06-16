@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
  * Class Product
  *
  * @property int $id
- * @property int $article
+ * @property string $article
  * @property string $image_url
  * @property string $name
  * @property string $description
