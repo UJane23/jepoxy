@@ -20,8 +20,8 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('availability');
-            $table->string('category_id');
-            $table->string('type_id');
+            $table->integer('category_id');
+            $table->integer('type_id');
             $table->integer('published')->default(0);
             $table->timestamps();
         });

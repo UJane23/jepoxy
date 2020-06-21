@@ -13,8 +13,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $name
  * @property string $description
  * @property string $availability
- * @property string $category_id
- * @property string $type_id
+ * @property int $category_id
+ * @property int $type_id
  * @property int $published
  * @property string $updated_ts
  * @property string $created_ts
