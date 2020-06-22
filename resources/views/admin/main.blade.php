@@ -62,7 +62,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="admin/catalog">
+                        <a class="nav-link" href="/admin/catalog">
                             <span data-feather="shopping-cart"></span>
                             Каталог
                         </a>
