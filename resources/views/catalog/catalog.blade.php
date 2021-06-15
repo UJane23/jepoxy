@@ -32,7 +32,7 @@
                         </a>
                         <div class="banner-content text-right">
                             <h5 class="banner-text1">BEAUTIFUL</h5>
-                            <h2 class="banner-text2">Украшения<span>(эпоксидная смола)</span></h2>
+                            <h2 class="banner-text2">Кулоны</h2>
                             <a href="shop.html" class="btn btn-text">Shop Now</a>
                         </div>
                     </figure>
@@ -44,7 +44,7 @@
                         </a>
                         <div class="banner-content text-center">
                             <h5 class="banner-text1">EARRINGS</h5>
-                            <h2 class="banner-text2">Аксессуары<span>для волос</span></h2>
+                            <h2 class="banner-text2">Комплекты</h2>
                             <a href="shop.html" class="btn btn-text">Shop Now</a>
                         </div>
                     </figure>
@@ -56,7 +56,7 @@
                         </a>
                         <div class="banner-content text-center">
                             <h5 class="banner-text1">NEW ARRIVALLS</h5>
-                            <h2 class="banner-text2">Игрушки</h2>
+                            <h2 class="banner-text2">Аксессуары</h2>
                             <a href="shop.html" class="btn btn-text">Shop Now</a>
                         </div>
                     </figure>
@@ -68,19 +68,7 @@
                         </a>
                         <div class="banner-content text-right">
                             <h5 class="banner-text1">NEW DESIGN</h5>
-                            <h2 class="banner-text2">Аксессуары<span>(эпоксодная смола)</span></h2>
-                            <a href="shop.html" class="btn btn-text">Shop Now</a>
-                        </div>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="banner-statistics mt-20">
-                        <a href="#">
-                            <img src="/layout/img/banner/img4-top.jpg" alt="product banner">
-                        </a>
-                        <div class="banner-content text-right">
-                            <h5 class="banner-text1">NEW DESIGN</h5>
-                            <h2 class="banner-text2">Мобили</h2>
+                            <h2 class="banner-text2">Заготовки</span></h2>
                             <a href="shop.html" class="btn btn-text">Shop Now</a>
                         </div>
                     </figure>
