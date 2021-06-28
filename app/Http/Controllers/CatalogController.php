@@ -4,6 +4,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 
 class CatalogController extends Controller
 {
@@ -19,11 +20,11 @@ class CatalogController extends Controller
         return \View::make('catalog.product_details');
     }
 
-//    public function details($id) {
-//        $item = Category::findOrFail($id);
-//        /* @var $item Category*/
-//        return \View::make('catalog.product_details', [
-//            'item' => $item,
-//        ]);
-//    }
+    public function detail($id) {
+        $item = Product::findOrFail($id);
+        /* @var $item Product*/
+        return \View::make('catalog.product_details', [
+            'item' => $item,
+        ]);
+    }
 }
