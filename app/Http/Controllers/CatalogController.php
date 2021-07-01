@@ -3,8 +3,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Http\Controllers\Controller;
 use App\Models\Product;
+use App\Models\Type;
 
 class CatalogController extends Controller
 {
@@ -13,7 +15,19 @@ class CatalogController extends Controller
     }
 
     public function products() {
-        return \View::make('catalog.products');
+        $categories = Category::query()
+            ->orderBy('name', 'asc')
+            ->get();
+        ;
+
+        $types = Type::query()
+            ->orderBy('name', 'asc')
+            ->get();
+        ;
+        return \View::make('catalog.products', [
+            'categories' => $categories,
+            'types' => $types
+        ]);
     }
 
     public function details() {

@@ -31,15 +31,14 @@
                     <aside class="sidebar-wrapper">
                         <!-- single sidebar start -->
                         <div class="sidebar-single">
-                            <h5 class="sidebar-title">categories</h5>
+                            <h5 class="sidebar-title">Категории</h5>
                             <div class="sidebar-body">
                                 <ul class="shop-categories">
-                                    <li><a href="#">fashionware <span>(10)</span></a></li>
-                                    <li><a href="#">kitchenware <span>(5)</span></a></li>
-                                    <li><a href="#">electronics <span>(8)</span></a></li>
-                                    <li><a href="#">accessories <span>(4)</span></a></li>
-                                    <li><a href="#">shoe <span>(5)</span></a></li>
-                                    <li><a href="#">toys <span>(2)</span></a></li>
+
+                                    @foreach($categories as $category)
+                                        <li><a href="#">{{$category->name}} <span>(10)</span></a></li>
+                                    @endforeach
+
                                 </ul>
                             </div>
                         </div>
@@ -47,17 +46,17 @@
 
                         <!-- single sidebar start -->
                         <div class="sidebar-single">
-                            <h5 class="sidebar-title">price</h5>
+                            <h5 class="sidebar-title">Цена</h5>
                             <div class="sidebar-body">
                                 <div class="price-range-wrap">
                                     <div class="price-range" data-min="1" data-max="1000"></div>
                                     <div class="range-slider">
                                         <form action="#" class="d-flex align-items-center justify-content-between">
                                             <div class="price-input">
-                                                <label for="amount">Price: </label>
+                                                <label for="amount">Цена: </label>
                                                 <input type="text" id="amount">
                                             </div>
-                                            <button class="filter-btn">filter</button>
+                                            <button class="filter-btn">Фильтр</button>
                                         </form>
                                     </div>
                                 </div>
@@ -67,113 +66,25 @@
 
                         <!-- single sidebar start -->
                         <div class="sidebar-single">
-                            <h5 class="sidebar-title">Brand</h5>
+                            <h5 class="sidebar-title">Тип изделия</h5>
                             <div class="sidebar-body">
                                 <ul class="checkbox-container categories-list">
                                     <li>
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2">Studio (3)</label>
+                                            <label class="custom-control-label" for="customCheck2">Все (3)</label>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                            <label class="custom-control-label" for="customCheck3">Hastech (4)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                            <label class="custom-control-label" for="customCheck4">Quickiin (15)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1">Graphic corner (10)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                            <label class="custom-control-label" for="customCheck5">devItems (12)</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- single sidebar end -->
 
-                        <!-- single sidebar start -->
-                        <div class="sidebar-single">
-                            <h5 class="sidebar-title">color</h5>
-                            <div class="sidebar-body">
-                                <ul class="checkbox-container categories-list">
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
-                                            <label class="custom-control-label" for="customCheck12">black (20)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck13">
-                                            <label class="custom-control-label" for="customCheck13">red (6)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck14">
-                                            <label class="custom-control-label" for="customCheck14">blue (8)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck11">
-                                            <label class="custom-control-label" for="customCheck11">green (5)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
-                                            <label class="custom-control-label" for="customCheck15">pink (4)</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- single sidebar end -->
+                                    @foreach($types as $type)
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2">{{$type->name}}(3)</label>
+                                            </div>
+                                        </li>
+                                    @endforeach
 
-                        <!-- single sidebar start -->
-                        <div class="sidebar-single">
-                            <h5 class="sidebar-title">size</h5>
-                            <div class="sidebar-body">
-                                <ul class="checkbox-container categories-list">
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck111">
-                                            <label class="custom-control-label" for="customCheck111">S (4)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck222">
-                                            <label class="custom-control-label" for="customCheck222">M (5)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck333">
-                                            <label class="custom-control-label" for="customCheck333">L (7)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck444">
-                                            <label class="custom-control-label" for="customCheck444">XL (3)</label>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -212,13 +123,13 @@
                                 <div class="col-lg-5 col-md-6 order-1 order-md-2">
                                     <div class="top-bar-right">
                                         <div class="product-short">
-                                            <p>Sort By : </p>
+                                            <p>Сортировка : </p>
                                             <select class="nice-select" name="sortby">
-                                                <option value="trending">Relevance</option>
+                                                <option value="rating">По увеличению цены</option>
+                                                <option value="date">по уменьшению цены</option>
+                                                <option value="trending">Новинки </option>
                                                 <option value="sales">Name (A - Z)</option>
                                                 <option value="sales">Name (Z - A)</option>
-                                                <option value="rating">Price (Low &gt; High)</option>
-                                                <option value="date">Rating (Lowest)</option>
                                                 <option value="price-asc">Model (A - Z)</option>
                                                 <option value="price-asc">Model (Z - A)</option>
                                             </select>
@@ -259,11 +170,11 @@
                                     </figure>
                                     <div class="product-caption text-center">
                                         <div class="product-identity">
-                                            <p class="manufacturer-name"><a href="product-details.html">Platinum</a></p>
+                                            <p class="manufacturer-name"><a href="product-details.html">Кулон "Пеструшка"</a></p>
                                         </div>
                                         <ul class="color-categories">
                                             <li>
-                                                <a class="c-lightblue" href="#" title="LightSteelblue"></a>
+                                                <a class="c-lightblue" href="/catalog/products/product_detail/{id}" title="LightSteelblue" target="_blank"></a>
                                             </li>
                                             <li>
                                                 <a class="c-darktan" href="#" title="Darktan"></a>
