@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $published
  * @property string $updated_ts
  * @property string $created_ts
+ * @property string $preview_text
  *
  * @package App\Models
  */
