@@ -19,19 +19,19 @@ class CatalogController extends Controller
             ->orderBy('name', 'asc')
             ->get();
         ;
-
         $types = Type::query()
+            ->orderBy('name', 'asc')
+            ->get();
+        ;
+        $products = Product::query()
             ->orderBy('name', 'asc')
             ->get();
         ;
         return \View::make('catalog.products', [
             'categories' => $categories,
-            'types' => $types
+            'types' => $types,
+            'products' => $products
         ]);
-    }
-
-    public function details() {
-        return \View::make('catalog.product_details');
     }
 
     public function detail($id) {
