@@ -1217,17 +1217,17 @@
         <!-- product area end -->
 
         <!-- banner statistics area start -->
-        <div class="banner-statistics-area">
+        <div class="banner-statistics-area section-padding">
             <div class="container">
                 <div class="row row-20 mtn-20">
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
-                            <a href="#">
-                                <img src="layout/img/banner/img1-top.jpg" alt="product banner">
+                            <a href="catalog/products">
+                                <img src="/layout/img/banner/img1-top.jpg" alt="product banner">
                             </a>
                             <div class="banner-content text-right">
                                 <h5 class="banner-text1">BEAUTIFUL</h5>
-                                <h2 class="banner-text2">Wedding<span>Rings</span></h2>
+                                <h2 class="banner-text2">Кулоны</h2>
                                 <a href="shop.html" class="btn btn-text">Shop Now</a>
                             </div>
                         </figure>
@@ -1235,11 +1235,11 @@
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
                             <a href="#">
-                                <img src="layout/img/banner/img2-top.jpg" alt="product banner">
+                                <img src="/layout/img/banner/img2-top.jpg" alt="product banner">
                             </a>
                             <div class="banner-content text-center">
                                 <h5 class="banner-text1">EARRINGS</h5>
-                                <h2 class="banner-text2">Tangerine Floral <span>Earring</span></h2>
+                                <h2 class="banner-text2">Брелки</h2>
                                 <a href="shop.html" class="btn btn-text">Shop Now</a>
                             </div>
                         </figure>
@@ -1247,11 +1247,11 @@
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
                             <a href="#">
-                                <img src="layout/img/banner/img3-top.jpg" alt="product banner">
+                                <img src="/layout/img/banner/img3-top.jpg" alt="product banner">
                             </a>
                             <div class="banner-content text-center">
                                 <h5 class="banner-text1">NEW ARRIVALLS</h5>
-                                <h2 class="banner-text2">Pearl<span>Necklaces</span></h2>
+                                <h2 class="banner-text2">Зима</h2>
                                 <a href="shop.html" class="btn btn-text">Shop Now</a>
                             </div>
                         </figure>
@@ -1259,11 +1259,11 @@
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
                             <a href="#">
-                                <img src="layout/img/banner/img4-top.jpg" alt="product banner">
+                                <img src="/layout/img/banner/img4-top.jpg" alt="product banner">
                             </a>
                             <div class="banner-content text-right">
                                 <h5 class="banner-text1">NEW DESIGN</h5>
-                                <h2 class="banner-text2">Diamond<span>Jewelry</span></h2>
+                                <h2 class="banner-text2">Комплекты</h2>
                                 <a href="shop.html" class="btn btn-text">Shop Now</a>
                             </div>
                         </figure>
@@ -1272,7 +1272,6 @@
             </div>
         </div>
         <!-- banner statistics area end -->
-
         <!-- group product start -->
         <section class="group-product-area section-padding">
             <div class="container">
@@ -1548,7 +1547,7 @@
                                         <img src="layout/img/banner/img1-middle.jpg" alt="product banner">
                                     </a>
                                     <div class="banner-content banner-content_style2">
-                                        <h5 class="banner-text3"><a href="#">BRACELATES</a></h5>
+                                        <h5 class="banner-text3"><a href="#">Животные</a></h5>
                                     </div>
                                 </figure>
                             </div>
@@ -1560,7 +1559,7 @@
                                         <img src="layout/img/banner/img2-middle.jpg" alt="product banner">
                                     </a>
                                     <div class="banner-content banner-content_style2">
-                                        <h5 class="banner-text3"><a href="#">EARRINGS</a></h5>
+                                        <h5 class="banner-text3"><a href="#">Растения</a></h5>
                                     </div>
                                 </figure>
                             </div>
@@ -1572,7 +1571,7 @@
                                         <img src="layout/img/banner/img3-middle.jpg" alt="product banner">
                                     </a>
                                     <div class="banner-content banner-content_style2">
-                                        <h5 class="banner-text3"><a href="#">NECJLACES</a></h5>
+                                        <h5 class="banner-text3"><a href="#">Фрукты</a></h5>
                                     </div>
                                 </figure>
                             </div>
@@ -1584,7 +1583,7 @@
                                         <img src="layout/img/banner/img4-middle.jpg" alt="product banner">
                                     </a>
                                     <div class="banner-content banner-content_style2">
-                                        <h5 class="banner-text3"><a href="#">RINGS</a></h5>
+                                        <h5 class="banner-text3"><a href="#">Перья</a></h5>
                                     </div>
                                 </figure>
                             </div>
@@ -1596,7 +1595,7 @@
                                         <img src="layout/img/banner/img5-middle.jpg" alt="product banner">
                                     </a>
                                     <div class="banner-content banner-content_style2">
-                                        <h5 class="banner-text3"><a href="#">PEARLS</a></h5>
+                                        <h5 class="banner-text3"><a href="#">Море</a></h5>
                                     </div>
                                 </figure>
                             </div>
