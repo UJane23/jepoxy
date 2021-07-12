@@ -24,7 +24,7 @@ Route::group(['prefix' =>'admin'], function (){
 
     Route::get('/catalog', ['as' => 'catalog_list', 'uses' => 'Admin\ProductController@index']);
     Route::get('/catalog/new', ['as' => 'new_product', 'uses' => 'Admin\ProductController@new']);
-    Route::post('/catalog/save', ['as' => 'save_product', 'uses' => 'Admin\ProductController@save']);
     Route::get('/catalog/edit/{id}', ['as' => 'edit_product', 'uses' => 'Admin\ProductController@edit']);
-    Route::get('/catalog/delete', ['as' => 'delete_product', 'uses' => 'Admin\ProductController@delete']);
+    Route::post('/catalog/save', ['as' => 'save_product', 'uses' => 'Admin\ProductController@save']);
+    Route::get('/catalog/delete/{id}', ['as' => 'delete_product', 'uses' => 'Admin\ProductController@delete']);
 });

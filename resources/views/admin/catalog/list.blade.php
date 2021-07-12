@@ -4,7 +4,7 @@
 
     <div class="container-fluid table">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Каталог продукции</h1>
+            <h1 class="h2">Каталог изделий</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
                 <div class="btn-group mr-2">
                     <a type="button" href="/admin/catalog/new" class="btn btn-outline-success">+ Создать</a>
@@ -32,15 +32,17 @@
                 <tr class="table-warning">
                     <th scope="col"></th>
                     <th scope="col">
-                        <a href="{{ route('catalog_list', ['product' => 'id', 'type' => (isset($_GET['type']) && $_GET['type'] == 'asc') ? 'desc' : 'asc' ]) }}">id</a>
+                        <a href="{{ route('catalog_list', ['product' => 'id', 'order_type' => (isset($_GET['type']) && $_GET['type'] == 'asc') ? 'desc' : 'asc' ]) }}">id</a>
                     </th>
                     <th scope="col" style="width: 80px; text-align: center;">Артикул</th>
                     <th scope="col" style="width: 200px; text-align: center;">Фото</th>
                     <th scope="col" style="width: 200px; text-align: center;">Название</th>
+                    <th scope="col" style="width: 200px; text-align: center;">Цена/ руб</th>
                     <th scope="col" style="width: 250px; text-align: center;">Описание изделия</th>
+                    <th scope="col" style="width: 250px; text-align: center;">Краткое описание</th>
                     <th scope="col" style="width: 80px; text-align: center;">Наличие</th>
                     <th scope="col" style="text-align: center;">Категория</th>
-                    <th scope="col" style="text-align: center;">Вид изделия</th>
+                    <th scope="col" style="text-align: center;">Тип изделия</th>
                     <th scope="col" style="text-align: center;">Опубликовано</th>
                     <th scope="col"></th>
                     <th scope="col"></th>
@@ -58,13 +60,19 @@
                         <td scope="row" style="max-width: 80px; overflow: hidden; text-align: center;">{{ $item->article }}</td>
                         <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->image_url }}</td>
                         <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->name }}</td>
+                        <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->price }}</td>
                         <td style="max-width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->description }}</td>
+                        <td style="max-width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->preview_text }}</td>
                         <td style="max-width: 80px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: center;">{{ $item->availability }}</td>
                         <td style="text-align: center;">
-                            {{$item->getCategoryName()}}
+                            @foreach($categories as $category)
+                                {{$category->id == $item->category_id ? "$category->name" : ''}}
+                            @endforeach
                         </td>
                         <td style="text-align: center;">
-                            {{$item->getTypeName()}}
+                            @foreach($types as $type)
+                                {{$type->id == $item->type_id ? "$type->name" : ''}}
+                            @endforeach
                         </td>
                         <td style="text-align: center;">
                             {{ $item->published ? 'Да' : 'Нет' }}

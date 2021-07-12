@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Админка S&A tresury</title>
+    <title>Админка jepoxy</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
 
@@ -35,7 +35,7 @@
 </head>
 <body>
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/admin">S&A tresury</a>
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/admin">jepoxy</a>
     <input class="form-control form-control-dark w-100" type="text" placeholder="Поиск" aria-label="Search">
     <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
@@ -64,7 +64,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/catalog">
                             <span data-feather="shopping-cart"></span>
-                            Каталог
+                            Изделия
                         </a>
                     </li>
                     <li class="nav-item">
