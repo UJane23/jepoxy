@@ -45,49 +45,49 @@
                         <!-- single sidebar end -->
 
                         <!-- single sidebar start -->
-                        <div class="sidebar-single">
-                            <h5 class="sidebar-title">Цена</h5>
-                            <div class="sidebar-body">
-                                <div class="price-range-wrap">
-                                    <div class="price-range" data-min="1" data-max="1000"></div>
-                                    <div class="range-slider">
-                                        <form action="#" class="d-flex align-items-center justify-content-between">
-                                            <div class="price-input">
-                                                <label for="amount">Цена: </label>
-                                                <input type="text" id="amount">
-                                            </div>
-                                            <button class="filter-btn">Фильтр</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+{{--                        <div class="sidebar-single">--}}
+{{--                            <h5 class="sidebar-title">Цена</h5>--}}
+{{--                            <div class="sidebar-body">--}}
+{{--                                <div class="price-range-wrap">--}}
+{{--                                    <div class="price-range" data-min="1" data-max="1000"></div>--}}
+{{--                                    <div class="range-slider">--}}
+{{--                                        <form action="#" class="d-flex align-items-center justify-content-between">--}}
+{{--                                            <div class="price-input">--}}
+{{--                                                <label for="amount">Цена: </label>--}}
+{{--                                                <input type="text" id="amount">--}}
+{{--                                            </div>--}}
+{{--                                            <button class="filter-btn">Фильтр</button>--}}
+{{--                                        </form>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                         <!-- single sidebar end -->
 
                         <!-- single sidebar start -->
-                        <div class="sidebar-single">
-                            <h5 class="sidebar-title">Тип изделия</h5>
-                            <div class="sidebar-body">
-                                <ul class="checkbox-container categories-list">
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2">Все (3)</label>
-                                        </div>
-                                    </li>
+{{--                        <div class="sidebar-single">--}}
+{{--                            <h5 class="sidebar-title">Тип изделия</h5>--}}
+{{--                            <div class="sidebar-body">--}}
+{{--                                <ul class="checkbox-container categories-list">--}}
+{{--                                    <li>--}}
+{{--                                        <div class="custom-control custom-checkbox">--}}
+{{--                                            <input type="checkbox" class="custom-control-input" id="customCheck2">--}}
+{{--                                            <label class="custom-control-label" for="customCheck2">Все (3)</label>--}}
+{{--                                        </div>--}}
+{{--                                    </li>--}}
 
-                                    @foreach($types as $type)
-                                        <li>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                <label class="custom-control-label" for="customCheck2">{{$type->name}}(3)</label>
-                                            </div>
-                                        </li>
-                                    @endforeach
+{{--                                    @foreach($types as $type)--}}
+{{--                                        <li>--}}
+{{--                                            <div class="custom-control custom-checkbox">--}}
+{{--                                                <input type="checkbox" class="custom-control-input" id="customCheck2">--}}
+{{--                                                <label class="custom-control-label" for="customCheck2">{{$type->name}}(3)</label>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                    @endforeach--}}
 
-                                </ul>
-                            </div>
-                        </div>
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                         <!-- single sidebar end -->
 
                         <!-- single sidebar start -->
@@ -149,7 +149,7 @@
                                 <!-- product grid start -->
                                 <div class="product-item">
                                     <figure class="product-thumb">
-                                        <a href="product-details.html">
+                                        <a href="products/product_detail/{{$product->id}}">
                                             <img class="pri-img" src="/layout/img/product/product-1.jpg" alt="product">
                                             <img class="sec-img" src="/layout/img/product/product-18.jpg" alt="product">
                                         </a>
@@ -164,7 +164,7 @@
                                     </figure>
                                     <div class="product-caption text-center">
                                         <div class="product-identity">
-                                            <p class="manufacturer-name"><a href="product-details.html">{{$product->category_id}}</a></p>
+                                            <p class="manufacturer-name"><a href="product-details.html">{{$product->category === null ? ‘’ :$product->category->name}}</a></p>
                                         </div>
                                         <div class="pro">
                                             <span>Арт. {{$product->article}}</span>
@@ -197,7 +197,7 @@
                                     </figure>
                                     <div class="product-content-list">
                                         <div class="manufacturer-name">
-                                            <a href="product-details.html">{{$product->category_id}}</a>
+                                            <a href="product-details.html">{{$product->category === null ? ‘’ :$product->category->name}}</a>
                                         </div>
                                         <h5 class="product-name"><a href="product-details.html">{{$product->name}}</a></h5>
                                         <div class="price-box">
@@ -215,15 +215,9 @@
                         <!-- product item list wrapper end -->
 
                         <!-- start pagination area -->
-                        <div class="paginatoin-area text-center">
-                            <ul class="pagination-box">
-                                <li><a class="previous" href="#"><i class="pe-7s-angle-left"></i></a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a class="next" href="#"><i class="pe-7s-angle-right"></i></a></li>
-                            </ul>
-                        </div>
+
+                        {{ $products->links('pagination') }}
+
                         <!-- end pagination area -->
                     </div>
                 </div>
