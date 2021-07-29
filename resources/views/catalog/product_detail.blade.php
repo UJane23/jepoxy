@@ -74,18 +74,18 @@
                                 <div class="col-lg-7">
                                     <div class="product-details-des">
                                         <div class="manufacturer-name">
-                                            <a href="product-details.html">{{$item->category_id}}</a>
+                                            <a href="product-details.html">{{$item->category === null ? ‘’ :$item->category->name}}</a>
                                         </div>
                                         <h3 class="product-name">{{$item->name}}</h3>
                                         <div class="pro">
-                                            <span>Артикул {{$item->article}}</span>
+                                            <span>Артикул: {{$item->article}}</span>
                                         </div>
                                         <div class="price-box">
                                             <span class="price-regular">{{$item->price}} р</span>
                                         </div>
                                         <div class="availability">
                                             <i class="fa fa-check-circle"></i>
-                                            <span>{{$item->availability}}</span>
+                                            <span>{{$item->availability}} шт.</span>
                                         </div>
                                         <p class="pro-desc">{{$item->description}}</p>
                                         <div class="quantity-cart-box d-flex align-items-center">
@@ -105,9 +105,7 @@
                                                 <td>$120</td>
                                             </tr>
                                             <tr class="text-center">
-                                                <td>
-
-                                                </td>
+                                                <td>Материалы</td>
                                                 <td><a href="#">Earrings</a></td>
                                                 <td>$100</td>
                                             </tr>
@@ -128,20 +126,7 @@
                                                         erat mi, rutrum at sollicitudin rhoncus</p>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade active show" id="tab_two">
-                                                <table class="table table-bordered">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>color</td>
-                                                        <td>black, blue, red</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>size</td>
-                                                        <td>L, M, S</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+
                                             <div class="tab-pane fade" id="tab_three">
 
                                                 <h5>1 review for <span>Chaz Kangeroo</span></h5>
