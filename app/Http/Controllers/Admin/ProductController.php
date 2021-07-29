@@ -54,7 +54,7 @@ class ProductController extends Controller
 
         $types = Type::query()
             ->orderBy('name', 'asc')
-            ->get;
+            ->get();
 
         return \View::make('admin.catalog.form', [
             'item' => $item,
