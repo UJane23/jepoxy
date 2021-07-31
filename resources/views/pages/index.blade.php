@@ -4,118 +4,118 @@
 
     <main>
         <!-- hero slider area start -->
-        <section class="slider-area">
-            <div class="hero-slider-active slick-arrow-style slick-arrow-style_hero slick-dot-style">
-                <!-- single slider item start -->
-                <div class="hero-single-slide hero-overlay">
-                    <div class="hero-slider-item bg-img" data-bg="layout/img/slider/home1-slide2.jpg">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="hero-slider-content slide-1">
-                                        <h2 class="slide-title">Family Jewellery <span>Collection</span></h2>
-                                        <h4 class="slide-desc">Designer Jewellery Necklaces-Bracelets-Earings</h4>
-                                        <a href="shop.html" class="btn btn-hero">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single slider item start -->
+{{--        <section class="slider-area">--}}
+{{--            <div class="hero-slider-active slick-arrow-style slick-arrow-style_hero slick-dot-style">--}}
+{{--                <!-- single slider item start -->--}}
+{{--                <div class="hero-single-slide hero-overlay">--}}
+{{--                    <div class="hero-slider-item bg-img" data-bg="layout/img/slider/home1-slide2.jpg">--}}
+{{--                        <div class="container">--}}
+{{--                            <div class="row">--}}
+{{--                                <div class="col-md-12">--}}
+{{--                                    <div class="hero-slider-content slide-1">--}}
+{{--                                        <h2 class="slide-title">Family Jewellery <span>Collection</span></h2>--}}
+{{--                                        <h4 class="slide-desc">Designer Jewellery Necklaces-Bracelets-Earings</h4>--}}
+{{--                                        <a href="shop.html" class="btn btn-hero">Read More</a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <!-- single slider item start -->--}}
 
-                <!-- single slider item start -->
-                <div class="hero-single-slide hero-overlay">
-                    <div class="hero-slider-item bg-img" data-bg="layout/img/slider/home1-slide3.jpg">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="hero-slider-content slide-2 float-md-right float-none">
-                                        <h2 class="slide-title">Diamonds Jewellery<span>Collection</span></h2>
-                                        <h4 class="slide-desc">Shukra Yogam & Silver Power Silver Saving Schemes.</h4>
-                                        <a href="shop.html" class="btn btn-hero">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single slider item start -->
+{{--                <!-- single slider item start -->--}}
+{{--                <div class="hero-single-slide hero-overlay">--}}
+{{--                    <div class="hero-slider-item bg-img" data-bg="layout/img/slider/home1-slide3.jpg">--}}
+{{--                        <div class="container">--}}
+{{--                            <div class="row">--}}
+{{--                                <div class="col-md-12">--}}
+{{--                                    <div class="hero-slider-content slide-2 float-md-right float-none">--}}
+{{--                                        <h2 class="slide-title">Diamonds Jewellery<span>Collection</span></h2>--}}
+{{--                                        <h4 class="slide-desc">Shukra Yogam & Silver Power Silver Saving Schemes.</h4>--}}
+{{--                                        <a href="shop.html" class="btn btn-hero">Read More</a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <!-- single slider item start -->--}}
 
-                <!-- single slider item start -->
-                <div class="hero-single-slide hero-overlay">
-                    <div class="hero-slider-item bg-img" data-bg="layout/img/slider/home1-slide1.jpg">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="hero-slider-content slide-3">
-                                        <h2 class="slide-title">Grace Designer<span>Jewellery</span></h2>
-                                        <h4 class="slide-desc">Rings, Occasion Pieces, Pandora & More.</h4>
-                                        <a href="shop.html" class="btn btn-hero">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single slider item end -->
-            </div>
-        </section>
+{{--                <!-- single slider item start -->--}}
+{{--                <div class="hero-single-slide hero-overlay">--}}
+{{--                    <div class="hero-slider-item bg-img" data-bg="layout/img/slider/home1-slide1.jpg">--}}
+{{--                        <div class="container">--}}
+{{--                            <div class="row">--}}
+{{--                                <div class="col-md-12">--}}
+{{--                                    <div class="hero-slider-content slide-3">--}}
+{{--                                        <h2 class="slide-title">Grace Designer<span>Jewellery</span></h2>--}}
+{{--                                        <h4 class="slide-desc">Rings, Occasion Pieces, Pandora & More.</h4>--}}
+{{--                                        <a href="shop.html" class="btn btn-hero">Read More</a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <!-- single slider item end -->--}}
+{{--            </div>--}}
+{{--        </section>--}}
         <!-- hero slider area end -->
 
         <!-- service policy area start -->
-        <div class="service-policy">
-            <div class="container">
-                <div class="policy-block section-padding">
-                    <div class="row mtn-30">
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="policy-item">
-                                <div class="policy-icon">
-                                    <i class="pe-7s-plane"></i>
-                                </div>
-                                <div class="policy-content">
-                                    <h6>Free Shipping</h6>
-                                    <p>Free shipping all order</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="policy-item">
-                                <div class="policy-icon">
-                                    <i class="pe-7s-help2"></i>
-                                </div>
-                                <div class="policy-content">
-                                    <h6>Support 24/7</h6>
-                                    <p>Support 24 hours a day</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="policy-item">
-                                <div class="policy-icon">
-                                    <i class="pe-7s-back"></i>
-                                </div>
-                                <div class="policy-content">
-                                    <h6>Money Return</h6>
-                                    <p>30 days for free return</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="policy-item">
-                                <div class="policy-icon">
-                                    <i class="pe-7s-credit"></i>
-                                </div>
-                                <div class="policy-content">
-                                    <h6>100% Payment Secure</h6>
-                                    <p>We ensure secure payment</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--        <div class="service-policy">--}}
+{{--            <div class="container">--}}
+{{--                <div class="policy-block section-padding">--}}
+{{--                    <div class="row mtn-30">--}}
+{{--                        <div class="col-sm-6 col-lg-3">--}}
+{{--                            <div class="policy-item">--}}
+{{--                                <div class="policy-icon">--}}
+{{--                                    <i class="pe-7s-plane"></i>--}}
+{{--                                </div>--}}
+{{--                                <div class="policy-content">--}}
+{{--                                    <h6>Free Shipping</h6>--}}
+{{--                                    <p>Free shipping all order</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-sm-6 col-lg-3">--}}
+{{--                            <div class="policy-item">--}}
+{{--                                <div class="policy-icon">--}}
+{{--                                    <i class="pe-7s-help2"></i>--}}
+{{--                                </div>--}}
+{{--                                <div class="policy-content">--}}
+{{--                                    <h6>Support 24/7</h6>--}}
+{{--                                    <p>Support 24 hours a day</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-sm-6 col-lg-3">--}}
+{{--                            <div class="policy-item">--}}
+{{--                                <div class="policy-icon">--}}
+{{--                                    <i class="pe-7s-back"></i>--}}
+{{--                                </div>--}}
+{{--                                <div class="policy-content">--}}
+{{--                                    <h6>Money Return</h6>--}}
+{{--                                    <p>30 days for free return</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-sm-6 col-lg-3">--}}
+{{--                            <div class="policy-item">--}}
+{{--                                <div class="policy-icon">--}}
+{{--                                    <i class="pe-7s-credit"></i>--}}
+{{--                                </div>--}}
+{{--                                <div class="policy-content">--}}
+{{--                                    <h6>100% Payment Secure</h6>--}}
+{{--                                    <p>We ensure secure payment</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <!-- service policy area end -->
 
         <!-- product area start -->
@@ -154,8 +154,8 @@
                                             <div class="product-item">
                                                 <figure class="product-thumb">
                                                     <a href="products/product_detail/{{$product->id}}">
-                                                        <img class="pri-img" src="layout/img/product/product-1.jpg" alt="product">
-                                                        <img class="sec-img" src="layout/img/product/product-18.jpg" alt="product">
+                                                        <img class="pri-img" src="{{ \Storage::url($product->image_url)  }}" alt="product">
+                                                        <img class="sec-img" src="{{ \Storage::url($product->image_url)  }}" alt="product">
                                                     </a>
                                                     <div class="button-group">
                                                         <a href="wishlist.html" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="pe-7s-like"></i></a>
@@ -201,48 +201,48 @@
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
                             <a href="catalog/products">
-                                <img src="/layout/img/banner/img1-top.jpg" alt="product banner">
+                                <img src="/images/20210627_115352.jpg" alt="product banner">
                             </a>
                             <div class="banner-content text-right">
-                                <h5 class="banner-text1">BEAUTIFUL</h5>
+{{--                                <h5 class="banner-text1">BEAUTIFUL</h5>--}}
                                 <h2 class="banner-text2">Кулоны</h2>
-                                <a href="shop.html" class="btn btn-text">Shop Now</a>
+{{--                                <a href="shop.html" class="btn btn-text">Shop Now</a>--}}
                             </div>
                         </figure>
                     </div>
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
                             <a href="#">
-                                <img src="/layout/img/banner/img2-top.jpg" alt="product banner">
+                                <img src="/images/20210627_154705_banner.jpg" alt="product banner">
                             </a>
                             <div class="banner-content text-center">
-                                <h5 class="banner-text1">EARRINGS</h5>
-                                <h2 class="banner-text2">Брелки</h2>
-                                <a href="shop.html" class="btn btn-text">Shop Now</a>
+{{--                                <h5 class="banner-text1">EARRINGS</h5>--}}
+                                <h2 class="banner-text2">Аксессуары</h2>
+{{--                                <a href="shop.html" class="btn btn-text">Shop Now</a>--}}
                             </div>
                         </figure>
                     </div>
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
                             <a href="#">
-                                <img src="/layout/img/banner/img3-top.jpg" alt="product banner">
+                                <img src="/images/img3-top.jpg" alt="product banner">
                             </a>
                             <div class="banner-content text-center">
-                                <h5 class="banner-text1">NEW ARRIVALLS</h5>
-                                <h2 class="banner-text2">Зима</h2>
-                                <a href="shop.html" class="btn btn-text">Shop Now</a>
+{{--                                <h5 class="banner-text1">NEW ARRIVALLS</h5>--}}
+                                <h2 class="banner-text2">Заготовки</h2>
+{{--                                <a href="shop.html" class="btn btn-text">Shop Now</a>--}}
                             </div>
                         </figure>
                     </div>
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
                             <a href="#">
-                                <img src="/layout/img/banner/img4-top.jpg" alt="product banner">
+                                <img src="/images/20210627_115352_banner.jpg" alt="product banner">
                             </a>
                             <div class="banner-content text-right">
-                                <h5 class="banner-text1">NEW DESIGN</h5>
+{{--                                <h5 class="banner-text1">NEW DESIGN</h5>--}}
                                 <h2 class="banner-text2">Комплекты</h2>
-                                <a href="shop.html" class="btn btn-text">Shop Now</a>
+{{--                                <a href="shop.html" class="btn btn-text">Shop Now</a>--}}
                             </div>
                         </figure>
                     </div>
