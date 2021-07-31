@@ -82,6 +82,15 @@ class ProductController extends Controller
 //                ->withInput();
 //        }
 
+        //!!!!!!!!!!!!
+        //find . -maxdepth 1 -iname "*.jpg" | xargs -L1 -I{} convert -resize 20% "{}" _resized/"{}" - меняет вес картинки в %
+        //convert myfigure.png -resize 200x100 myfigure.jpg
+        //convert -resize 50% myfigure.png myfigure.jpg
+
+        // magick 20210627_123403.jpg -crop "50%x+%[fx:0.25*w]+%[fx:0.25*h]" +repage result.jpg
+
+
+
         /** @var Product $item */
         $id = $request->get('id', 0);
         if ($id == 0 ) {
@@ -92,9 +101,7 @@ class ProductController extends Controller
 
         $item->article = $request->get('article');
         if($request->hasFile('image')) {
-            $item->image_url = $request->file('image')->store('public/images');
-        } else {
-            $item->image_url = '';
+            $item->image_url = $request->file('image')->store('public/product_images');
         }
         $item->name = $request->get('name');
         $item->description = $request->get('description');

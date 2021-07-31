@@ -21,7 +21,7 @@
                 </div>
             @endif
 
-            <form method="POST" action="{{route('save_product', isset($item->id) ? $item->id : 0)}}">
+            <form method="POST" action="{{route('save_product', isset($item->id) ? $item->id : 0)}}" enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <input type="hidden" name="id" value="{{ $item->id }}">
 
@@ -34,12 +34,12 @@
                 <br>
 
                 <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Фото</label>
                     <div>
                         @if ($item->image_url)
                             <img src="{{ \Storage::url($item->image_url)  }}" style="max-width: 100px; max-height: 50px" alt="">
                         @endif
                     </div>
-                    <label class="col-sm-2 col-form-label">Фото</label>
                     <div class="col-sm-7">
                         <input type="file" class="form-control-file" placeholder="Фото" name="image_url" value="{{ old('image_url', $item->image_url) }}">
                     </div>

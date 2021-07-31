@@ -24,7 +24,7 @@
     <!-- breadcrumb area end -->
 
     <!-- page main wrapper start -->
-    <form method="post" action="{{route('product_detail', isset($item->id) ? $item->id : 0)}}">
+    <form method="post" action="{{route('product_detail', isset($item->id) ? $item->id : 0)}}" enctype="multipart/form-data">
         {{csrf_field()}}
 
         <div class="shop-main-wrapper section-padding pb-0">
@@ -38,7 +38,7 @@
                                 <div class="col-lg-5">
                                     <div class="product-large-slider">
                                         <div class="pro-large-img img-zoom">
-                                            <img src="/layout/img/product/product-details-img1.jpg" alt="product-details" />
+                                            <img src="{{ \Storage::url($item->image_url)  }}" alt="product-details" />
                                         </div>
                                         <div class="pro-large-img img-zoom">
                                             <img src="/layout/img/product/product-details-img2.jpg" alt="product-details" />
