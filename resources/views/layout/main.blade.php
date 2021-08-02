@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>jepoxy - изделия ручной работы из эпоксидной смолы</title>
+    <title>Jepoxy - изделия ручной работы из эпоксидной смолы</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/layout/img/favicon.ico">
+    <link rel="icon" sizes="256x256" href="/layout/img/New_ProjectJe.ico">
 
     <!-- CSS
 	============================================ -->
@@ -48,7 +48,7 @@
                     <div class="col-lg-2">
                         <div class="logo">
                             <a href="/">
-                                <img src="/layout/img/logo/logo.png" alt="Brand Logo">
+                                <img src="/layout/img/logo/logoJ.png" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
@@ -61,60 +61,60 @@
                                 <!-- main menu navbar start -->
                                 <nav class="desktop-menu">
                                     <ul>
-                                        <li><a href="/about_us">О нас</a></li>
-                                        <li class="position-static active"><a href="/catalog">Каталог<i class="fa fa-angle-down"></i></a>
-                                            <ul class="megamenu dropdown">
-                                                <li class="mega-title"><span>column 01</span>
-                                                    <ul>
-                                                        <li><a href="shop.html">shop grid left
-                                                                sidebar</a></li>
-                                                        <li><a href="shop-grid-right-sidebar.html">shop grid right
-                                                                sidebar</a></li>
-                                                        <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
-                                                        <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="mega-title"><span>column 02</span>
-                                                    <ul>
-                                                        <li><a href="product-details.html">product details</a></li>
-                                                        <li><a href="product-details-affiliate.html">product
-                                                                details
-                                                                affiliate</a></li>
-                                                        <li><a href="product-details-variable.html">product details
-                                                                variable</a></li>
-                                                        <li><a href="product-details-group.html">product details
-                                                                group</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="mega-title"><span>column 03</span>
-                                                    <ul>
-                                                        <li><a href="cart.html">cart</a></li>
-                                                        <li><a href="checkout.html">checkout</a></li>
-                                                        <li><a href="compare.html">compare</a></li>
-                                                        <li><a href="wishlist.html">wishlist</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="mega-title"><span>column 04</span>
-                                                    <ul>
-                                                        <li><a href="my-account.html">my-account</a></li>
-                                                        <li><a href="login-register.html">login-register</a></li>
-                                                        <li><a href="about-us.html">about us</a></li>
-                                                        <li><a href="contact-us.html">contact us</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="megamenu-banners d-none d-lg-block">
-                                                    <a href="product-details.html">
-                                                        <img src="/layout/img/banner/img1-static-menu.jpg" alt="">
-                                                    </a>
-                                                </li>
-                                                <li class="megamenu-banners d-none d-lg-block">
-                                                    <a href="product-details.html">
-                                                        <img src="/layout/img/banner/img2-static-menu.jpg" alt="">
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                        {{--                                        <li><a href="/about_us">О нас</a></li>--}}
+                                        <li class="position-static active"><a href="/catalog">Каталог</a>
+                                            {{--                                            <ul class="megamenu dropdown">--}}
+                                            {{--                                                <li class="mega-title"><span>column 01</span>--}}
+                                            {{--                                                    <ul>--}}
+                                            {{--                                                        <li><a href="shop.html">shop grid left--}}
+                                            {{--                                                                sidebar</a></li>--}}
+                                            {{--                                                        <li><a href="shop-grid-right-sidebar.html">shop grid right--}}
+                                            {{--                                                                sidebar</a></li>--}}
+                                            {{--                                                        <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>--}}
+                                            {{--                                                        <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>--}}
+                                            {{--                                                    </ul>--}}
+                                            {{--                                                </li>--}}
+                                            {{--                                                <li class="mega-title"><span>column 02</span>--}}
+                                            {{--                                                    <ul>--}}
+                                            {{--                                                        <li><a href="product-details.html">product details</a></li>--}}
+                                            {{--                                                        <li><a href="product-details-affiliate.html">product--}}
+                                            {{--                                                                details--}}
+                                            {{--                                                                affiliate</a></li>--}}
+                                            {{--                                                        <li><a href="product-details-variable.html">product details--}}
+                                            {{--                                                                variable</a></li>--}}
+                                            {{--                                                        <li><a href="product-details-group.html">product details--}}
+                                            {{--                                                                group</a></li>--}}
+                                            {{--                                                    </ul>--}}
+                                            {{--                                                </li>--}}
+                                            {{--                                                <li class="mega-title"><span>column 03</span>--}}
+                                            {{--                                                    <ul>--}}
+                                            {{--                                                        <li><a href="cart.html">cart</a></li>--}}
+                                            {{--                                                        <li><a href="checkout.html">checkout</a></li>--}}
+                                            {{--                                                        <li><a href="compare.html">compare</a></li>--}}
+                                            {{--                                                        <li><a href="wishlist.html">wishlist</a></li>--}}
+                                            {{--                                                    </ul>--}}
+                                            {{--                                                </li>--}}
+                                            {{--                                                <li class="mega-title"><span>column 04</span>--}}
+                                            {{--                                                    <ul>--}}
+                                            {{--                                                        <li><a href="my-account.html">my-account</a></li>--}}
+                                            {{--                                                        <li><a href="login-register.html">login-register</a></li>--}}
+                                            {{--                                                        <li><a href="about-us.html">about us</a></li>--}}
+                                            {{--                                                        <li><a href="contact-us.html">contact us</a></li>--}}
+                                            {{--                                                    </ul>--}}
+                                            {{--                                                </li>--}}
+                                            {{--                                                <li class="megamenu-banners d-none d-lg-block">--}}
+                                            {{--                                                    <a href="product-details.html">--}}
+                                            {{--                                                        <img src="/layout/img/banner/img1-static-menu.jpg" alt="">--}}
+                                            {{--                                                    </a>--}}
+                                            {{--                                                </li>--}}
+                                            {{--                                                <li class="megamenu-banners d-none d-lg-block">--}}
+                                            {{--                                                    <a href="product-details.html">--}}
+                                            {{--                                                        <img src="/layout/img/banner/img2-static-menu.jpg" alt="">--}}
+                                            {{--                                                    </a>--}}
+                                            {{--                                                </li>--}}
+                                            {{--                                            </ul>--}}
                                         </li>
-                                        <li><a href="contact-us.html">Оплата / доставка</a></li>
+                                        {{--                                        <li><a href="contact-us.html">Оплата / доставка</a></li>--}}
                                     </ul>
                                 </nav>
                                 <!-- main menu navbar end -->
@@ -128,37 +128,42 @@
                         <div class="header-right d-flex align-items-center justify-content-xl-between justify-content-lg-end">
                             <div class="header-search-container">
                                 <button class="search-trigger d-xl-none d-lg-block"><i class="pe-7s-search"></i></button>
-                                <form class="header-search-box d-lg-none d-xl-block animated jackInTheBox">
-                                    <input type="text" placeholder="Поиск" class="header-search-field">
+
+                                <form action="{{ route('catalog') }}" method="get" class="header-search-box d-lg-none d-xl-block animated jackInTheBox">
+                                    <input type="text" placeholder="Поиск по названию" class="header-search-field">
+{{--                                    @if ($search != '')--}}
+{{--                                        <a type="button" href="{{ route('catalog') }}" class="btn btn-outline-secondary">Очистить поиск</a>--}}
+{{--                                    @endif--}}
                                     <button class="header-search-btn"><i class="pe-7s-search"></i></button>
                                 </form>
+
                             </div>
-                            <div class="header-configure-area">
-                                <ul class="nav justify-content-end">
-                                    <li class="user-hover">
-                                        <a href="#">
-                                            <i class="pe-7s-user"></i>
-                                        </a>
-                                        <ul class="dropdown-list">
-                                            <li><a href="login-register.html">login</a></li>
-                                            <li><a href="login-register.html">register</a></li>
-                                            <li><a href="my-account.html">my account</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="/personal/wishlist">
-                                            <i class="pe-7s-like"></i>
-                                            <div class="notification">0</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="minicart-btn">
-                                            <i class="pe-7s-shopbag"></i>
-                                            <div class="notification">2</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            {{--                            <div class="header-configure-area">--}}
+                            {{--                                <ul class="nav justify-content-end">--}}
+                            {{--                                    <li class="user-hover">--}}
+                            {{--                                        <a href="#">--}}
+                            {{--                                            <i class="pe-7s-user"></i>--}}
+                            {{--                                        </a>--}}
+                            {{--                                        <ul class="dropdown-list">--}}
+                            {{--                                            <li><a href="login-register.html">login</a></li>--}}
+                            {{--                                            <li><a href="login-register.html">register</a></li>--}}
+                            {{--                                            <li><a href="my-account.html">my account</a></li>--}}
+                            {{--                                        </ul>--}}
+                            {{--                                    </li>--}}
+                            {{--                                    <li>--}}
+                            {{--                                        <a href="/personal/wishlist">--}}
+                            {{--                                            <i class="pe-7s-like"></i>--}}
+                            {{--                                            <div class="notification">0</div>--}}
+                            {{--                                        </a>--}}
+                            {{--                                    </li>--}}
+                            {{--                                    <li>--}}
+                            {{--                                        <a href="#" class="minicart-btn">--}}
+                            {{--                                            <i class="pe-7s-shopbag"></i>--}}
+                            {{--                                            <div class="notification">2</div>--}}
+                            {{--                                        </a>--}}
+                            {{--                                    </li>--}}
+                            {{--                                </ul>--}}
+                            {{--                            </div>--}}
                         </div>
                     </div>
                     <!-- mini cart area end -->
@@ -346,79 +351,79 @@
                         <div class="widget-title">
                             <div class="widget-logo">
                                 <a href="index.html">
-                                    <img src="/layout/img/logo/logo.png" alt="brand logo">
+                                    <img src="/layout/img/logo/logoJ.png" alt="brand logo">
                                 </a>
                             </div>
                         </div>
                         <div class="widget-body">
-                            <p>We are a team of designers and developers that create high quality wordpress, shopify, Opencart </p>
+                            <p>Магазин изделий ручной работы из эпоксидной смолы.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="widget-item">
-                        <h6 class="widget-title">Contact Us</h6>
-                        <div class="widget-body">
-                            <address class="contact-block">
-                                <ul>
-                                    <li><i class="pe-7s-home"></i> 4710-4890 Breckinridge USA</li>
-                                    <li><i class="pe-7s-mail"></i> <a href="mailto:demo@plazathemes.com">demo@yourdomain.com </a></li>
-                                    <li><i class="pe-7s-call"></i> <a href="tel:(012)800456789987">(012) 800 456 789-987</a></li>
-                                </ul>
-                            </address>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="widget-item">
-                        <h6 class="widget-title">Information</h6>
-                        <div class="widget-body">
-                            <ul class="info-list">
-                                <li><a href="#">about us</a></li>
-                                <li><a href="#">Delivery Information</a></li>
-                                <li><a href="#">privet policy</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">contact us</a></li>
-                                <li><a href="#">site map</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="widget-item">
-                        <h6 class="widget-title">Follow Us</h6>
-                        <div class="widget-body social-link">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
+                {{--                <div class="col-lg-3 col-md-6">--}}
+                {{--                    <div class="widget-item">--}}
+                {{--                        <h6 class="widget-title">Contact Us</h6>--}}
+                {{--                        <div class="widget-body">--}}
+                {{--                            <address class="contact-block">--}}
+                {{--                                <ul>--}}
+                {{--                                    <li><i class="pe-7s-home"></i> 4710-4890 Breckinridge USA</li>--}}
+                {{--                                    <li><i class="pe-7s-mail"></i> <a href="mailto:demo@plazathemes.com">demo@yourdomain.com </a></li>--}}
+                {{--                                    <li><i class="pe-7s-call"></i> <a href="tel:(012)800456789987">(012) 800 456 789-987</a></li>--}}
+                {{--                                </ul>--}}
+                {{--                            </address>--}}
+                {{--                        </div>--}}
+                {{--                    </div>--}}
+                {{--                </div>--}}
+                {{--                <div class="col-lg-3 col-md-6">--}}
+                {{--                    <div class="widget-item">--}}
+                {{--                        <h6 class="widget-title">Information</h6>--}}
+                {{--                        <div class="widget-body">--}}
+                {{--                            <ul class="info-list">--}}
+                {{--                                <li><a href="#">about us</a></li>--}}
+                {{--                                <li><a href="#">Delivery Information</a></li>--}}
+                {{--                                <li><a href="#">privet policy</a></li>--}}
+                {{--                                <li><a href="#">Terms & Conditions</a></li>--}}
+                {{--                                <li><a href="#">contact us</a></li>--}}
+                {{--                                <li><a href="#">site map</a></li>--}}
+                {{--                            </ul>--}}
+                {{--                        </div>--}}
+                {{--                    </div>--}}
+                {{--                </div>--}}
+                {{--                <div class="col-lg-3 col-md-6">--}}
+                {{--                    <div class="widget-item">--}}
+                {{--                        <h6 class="widget-title">Follow Us</h6>--}}
+                {{--                        <div class="widget-body social-link">--}}
+                {{--                            <a href="#"><i class="fa fa-facebook"></i></a>--}}
+                {{--                            <a href="#"><i class="fa fa-twitter"></i></a>--}}
+                {{--                            <a href="#"><i class="fa fa-instagram"></i></a>--}}
+                {{--                            <a href="#"><i class="fa fa-youtube"></i></a>--}}
+                {{--                        </div>--}}
+                {{--                    </div>--}}
+                {{--                </div>--}}
             </div>
-            <div class="row align-items-center mt-20">
-                <div class="col-md-6">
-                    <div class="newsletter-wrapper">
-                        <h6 class="widget-title-text">Signup for newsletter</h6>
-                        <form class="newsletter-inner" id="mc-form">
-                            <input type="email" class="news-field" id="mc-email" autocomplete="off" placeholder="Enter your email address">
-                            <button class="news-btn" id="mc-submit">Subscribe</button>
-                        </form>
-                        <!-- mailchimp-alerts Start -->
-                        <div class="mailchimp-alerts">
-                            <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                            <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                            <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-                        </div>
-                        <!-- mailchimp-alerts end -->
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="footer-payment">
-                        <img src="/layout/img/payment.png" alt="payment method">
-                    </div>
-                </div>
-            </div>
+            {{--            <div class="row align-items-center mt-20">--}}
+            {{--                <div class="col-md-6">--}}
+            {{--                    <div class="newsletter-wrapper">--}}
+            {{--                        <h6 class="widget-title-text">Signup for newsletter</h6>--}}
+            {{--                        <form class="newsletter-inner" id="mc-form">--}}
+            {{--                            <input type="email" class="news-field" id="mc-email" autocomplete="off" placeholder="Enter your email address">--}}
+            {{--                            <button class="news-btn" id="mc-submit">Subscribe</button>--}}
+            {{--                        </form>--}}
+            {{--                        <!-- mailchimp-alerts Start -->--}}
+            {{--                        <div class="mailchimp-alerts">--}}
+            {{--                            <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->--}}
+            {{--                            <div class="mailchimp-success"></div><!-- mailchimp-success end -->--}}
+            {{--                            <div class="mailchimp-error"></div><!-- mailchimp-error end -->--}}
+            {{--                        </div>--}}
+            {{--                        <!-- mailchimp-alerts end -->--}}
+            {{--                    </div>--}}
+            {{--                </div>--}}
+            {{--                <div class="col-md-6">--}}
+            {{--                    <div class="footer-payment">--}}
+            {{--                        <img src="/layout/img/payment.png" alt="payment method">--}}
+            {{--                    </div>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
         </div>
     </div>
     <div class="footer-bottom">
@@ -426,7 +431,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="copyright-text text-center">
-                        <p>Powered By <a href="#">Corano</a>. Store 1 © 2019</p>
+                        <p>2021 Магазин изделий из эпоксидной смолы <a href="#">jepoxy</a></p>
                     </div>
                 </div>
             </div>

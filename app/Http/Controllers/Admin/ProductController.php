@@ -7,7 +7,6 @@ use App\Models\Category;
 use App\Models\Product;
 use App\Models\Type;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 
 class ProductController extends Controller
 {
@@ -83,7 +82,7 @@ class ProductController extends Controller
 //        }
 
         //!!!!!!!!!!!!
-        //find . -maxdepth 1 -iname "*.jpg" | xargs -L1 -I{} convert -resize 20% "{}" _resized/"{}" - меняет вес картинки в %
+        //find . -maxdepth 1 -iname "*.jpg" | xargs -L1 -I{} convert -resize 20% "{}" _resized/"{}" - меняет вес картинки в % в текущей директории в _resized/
         //convert myfigure.png -resize 200x100 myfigure.jpg
         //convert -resize 50% myfigure.png myfigure.jpg
 
