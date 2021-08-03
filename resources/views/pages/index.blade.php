@@ -124,7 +124,7 @@
                 <div class="row row-20 mtn-20">
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
-                            <a href="catalog/products">
+                            <a href="catalog">
                                 <img src="/images/20210802_095631.jpg" style="max-width: 545px; max-height: 250px" alt="product banner">
                             </a>
                             <div class="banner-content text-right">

@@ -12,8 +12,7 @@
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/"><i class="fa fa-home"></i></a></li>
                                 <li class="breadcrumb-item"><a href="/catalog">Каталог</a></li>
-                                <li class="breadcrumb-item"><a href="/catalog/products">product</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">product details</li>
+                                <li class="breadcrumb-item active" aria-current="page">Описание изделия</li>
                             </ul>
                         </nav>
                     </div>
