@@ -128,15 +128,10 @@
                         <div class="header-right d-flex align-items-center justify-content-xl-between justify-content-lg-end">
                             <div class="header-search-container">
                                 <button class="search-trigger d-xl-none d-lg-block"><i class="pe-7s-search"></i></button>
-
                                 <form action="{{ route('catalog') }}" method="get" class="header-search-box d-lg-none d-xl-block animated jackInTheBox">
-                                    <input type="text" placeholder="Поиск по названию" class="header-search-field">
-{{--                                    @if ($search != '')--}}
-{{--                                        <a type="button" href="{{ route('catalog') }}" class="btn btn-outline-secondary">Очистить поиск</a>--}}
-{{--                                    @endif--}}
-                                    <button class="header-search-btn"><i class="pe-7s-search"></i></button>
+                                    <input type="text" name="search" placeholder="Поиск по названию" class="header-search-field">
+                                    <button type="submit" class="header-search-btn"><i class="pe-7s-search"></i></button>
                                 </form>
-
                             </div>
                             {{--                            <div class="header-configure-area">--}}
                             {{--                                <ul class="nav justify-content-end">--}}

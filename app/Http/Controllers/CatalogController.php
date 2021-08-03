@@ -4,17 +4,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-use App\Http\Controllers\Controller;
 use App\Models\Product;
 use App\Models\Type;
+use Illuminate\Http\Request;
 
 class CatalogController extends Controller
 {
-    public function index() {
-        return \View::make('catalog.catalog');
-    }
-
-    public function products() {
+    public function index(Request $request) {
         $categories = Category::query()
             ->orderBy('name', 'asc')
             ->get();
@@ -23,9 +19,15 @@ class CatalogController extends Controller
             ->orderBy('name', 'asc')
             ->get();
 
-        $products = Product::where('published', '=', '1')
-            ->orderBy('name', 'asc')
-            ->paginate(10);
+        $productsQ = Product::where('published', '=', '1')
+            ->orderBy('name', 'asc');
+
+        if ($request->get('search', "") !== "") {
+            $search = $request->get('search', "");
+            $productsQ->where('name', 'like', '%'.$search.'%');
+        }
+
+        $products = $productsQ->paginate(10);
 
         return \View::make('catalog.products', [
             'categories' => $categories,
