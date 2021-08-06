@@ -31,6 +31,7 @@
                 <thead>
                 <tr class="table-warning">
                     <th scope="col"></th>
+                    <th scope="col"></th>
                     <th scope="col">
                         <a href="{{ route('catalog_list', ['product' => 'id', 'order_type' => (isset($_GET['type']) && $_GET['type'] == 'asc') ? 'desc' : 'asc' ]) }}">id</a>
                     </th>
@@ -45,7 +46,6 @@
                     <th scope="col" style="text-align: center;">Тип изделия</th>
                     <th scope="col" style="text-align: center;">Опубликовано</th>
                     <th scope="col"></th>
-                    <th scope="col"></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -55,6 +55,9 @@
                     <tr>
                         <td>
                             <a type="button" href="" class="btn btn-outline-primary btn-sm">Просмотр</a>
+                        </td>
+                        <td>
+                            <a type="button" href="{{route('edit_product', ['id' => $item->id])}}" class="btn btn-outline btn-success btn-sm">Редактировать</a>
                         </td>
                         <td>{{ $item->id }}</td>
                         <td scope="row" style="max-width: 80px; overflow: hidden; text-align: center;">{{ $item->article }}</td>
@@ -76,9 +79,6 @@
                         </td>
                         <td style="text-align: center;">
                             {{ $item->published ? 'Да' : 'Нет' }}
-                        </td>
-                        <td>
-                            <a type="button" href="{{route('edit_product', ['id' => $item->id])}}" class="btn btn-outline btn-success btn-sm">Редактировать</a>
                         </td>
                         <td>
                             <a type="button" href="{{route('delete_product', ['id' => $item->id])}}" class="btn btn-outline btn-danger btn-sm" onclick="return confirm('Вы уверены?!')">Удалить</a>
