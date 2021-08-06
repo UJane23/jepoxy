@@ -6,7 +6,9 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Type;
+use DB;
 use Illuminate\Http\Request;
+use function Illuminate\Support\Arr;
 
 class CatalogController extends Controller
 {
@@ -28,11 +30,19 @@ class CatalogController extends Controller
         }
 
         $products = $productsQ->paginate(10);
+        $category_data = DB::table('products')
+            ->select(DB::raw('category_id, COUNT(id) AS sum'))
+            ->where('published', '=','1')
+            ->groupBy('category_id')
+            ->get()
+            ->pluck('sum', 'category_id')
+            ->toArray();
 
         return \View::make('catalog.products', [
             'categories' => $categories,
             'types' => $types,
             'products' => $products,
+            'category_data' => $category_data,
         ]);
     }
 

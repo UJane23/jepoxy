@@ -35,7 +35,11 @@
                                 <ul class="shop-categories">
 
                                     @foreach($categories as $category)
-                                        <li><a href="#">{{$category->name}} <span>(10)</span></a></li>
+                                        <li><a href="#">{{$category->name}}
+                                                <span>
+                                               ({{$category_data[$category->id] ?? 0}})
+                                            </span></a>
+                                        </li>
                                     @endforeach
 
                                 </ul>
