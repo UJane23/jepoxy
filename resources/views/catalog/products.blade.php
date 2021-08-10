@@ -35,7 +35,7 @@
                                 <ul class="shop-categories">
 
                                     @foreach($categories as $category)
-                                        <li><a href="#">{{$category->name}}
+                                        <li><a href="{{ route('show_by_category', ['href_category' => $category->href_category]) }}">{{$category->name}}
                                                 <span>
                                                ({{$category_data[$category->id] ?? 0}})
                                             </span></a>
@@ -152,7 +152,7 @@
                                 <!-- product grid start -->
                                 <div class="product-item">
                                     <figure class="product-thumb">
-                                        <a href="catalog/product_detail/{{$product->id}}">
+                                        <a href="/catalog/product_detail/{{$product->id}}">
                                             <img class="pri-img" src="{{ \Storage::url($product->image_url)  }}" alt="product">
                                             <img class="sec-img" src="/layout/img/product/product-18.jpg" alt="product">
                                         </a>

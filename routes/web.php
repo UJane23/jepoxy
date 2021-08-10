@@ -10,6 +10,7 @@ Route::get('/about_us', ['as' => 'about_us', 'uses' => 'AboutUsController@index'
 Route::group(['prefix' =>'catalog'], function (){
     Route::get('/', ['as' => 'catalog', 'uses' => 'CatalogController@index']);
     Route::get('/product_detail/{id}', ['as' => 'product_detail', 'uses' => 'CatalogController@detail']);
+    Route::get('/category/{href_category}', ['as' => 'show_by_category', 'uses' => 'CatalogController@index']);
 });
 
 Route::group(['prefix' =>'personal'], function (){

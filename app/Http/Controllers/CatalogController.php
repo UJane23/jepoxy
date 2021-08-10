@@ -12,7 +12,7 @@ use function Illuminate\Support\Arr;
 
 class CatalogController extends Controller
 {
-    public function index(Request $request) {
+    public function index(Request $request, $href_category = null) {
         $categories = Category::query()
             ->orderBy('name', 'asc')
             ->get();
@@ -23,6 +23,19 @@ class CatalogController extends Controller
 
         $productsQ = Product::where('published', '=', '1')
             ->orderBy('name', 'asc');
+
+        if ($href_category !== null) {
+            $id = null;
+            foreach ($categories as $category) {
+                if ($href_category == $category->href_category) {
+                    $id = $category->id;
+                }
+            }
+            if ($id == null) {
+                abort(404);
+            }
+            $productsQ->where('category_id', $id);
+        }
 
         if ($request->get('search', "") !== "") {
             $search = $request->get('search', "");
