@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="/layout/css/plugins/jqueryui.min.css">
     <!-- main style css -->
     <link rel="stylesheet" href="/layout/css/style.css">
+    <!-- jQuery JS -->
+    <script src="/layout/js/vendor/jquery-3.3.1.min.js"></script>
 
 </head>
 
@@ -625,8 +627,7 @@
 
 <!-- Modernizer JS -->
 <script src="/layout/js/vendor/modernizr-3.6.0.min.js"></script>
-<!-- jQuery JS -->
-<script src="/layout/js/vendor/jquery-3.3.1.min.js"></script>
+
 <!-- Popper JS -->
 <script src="/layout/js/vendor/popper.min.js"></script>
 <!-- Bootstrap JS -->

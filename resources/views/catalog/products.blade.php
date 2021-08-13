@@ -35,7 +35,7 @@
                                 <ul class="shop-categories">
 
                                     @foreach($categories as $category)
-                                        <li><a href="{{ route('show_by_category', ['href_category' => $category->href_category]) }}">{{$category->name}}
+                                        <li><a href="{{ route('show_by_category', array_merge(request()->input(), ['href_category' => $category->href_category])) }}">{{$category->name}}
                                                 <span>
                                                ({{$category_data[$category->id] ?? 0}})
                                             </span></a>
@@ -115,8 +115,8 @@
                                 <div class="col-lg-7 col-md-6 order-2 order-md-1">
                                     <div class="top-bar-left">
                                         <div class="product-view-mode">
-                                            <a class="active" href="#" data-target="grid-view" data-toggle="tooltip" title="Grid View"><i class="fa fa-th"></i></a>
-                                            <a href="#" data-target="list-view" data-toggle="tooltip" title="List View"><i class="fa fa-list"></i></a>
+                                            <a class="active" href="#" data-target="grid-view" data-toggle="tooltip" title="Сетка"><i class="fa fa-th"></i></a>
+                                            <a href="#" data-target="list-view" data-toggle="tooltip" title="Список"><i class="fa fa-list"></i></a>
                                         </div>
                                         <div class="product-amount">
                                             <p>Showing 1–16 of 21 results</p>
@@ -127,15 +127,20 @@
                                     <div class="top-bar-right">
                                         <div class="product-short">
                                             <p>Сортировка : </p>
-                                            <select class="nice-select" name="sortby">
-                                                <option value="rating">По увеличению цены</option>
-                                                <option value="date">по уменьшению цены</option>
-                                                <option value="trending">Новинки </option>
-                                                <option value="sales">Name (A - Z)</option>
-                                                <option value="sales">Name (Z - A)</option>
-                                                <option value="price-asc">Model (A - Z)</option>
-                                                <option value="price-asc">Model (Z - A)</option>
+                                            <select id="sort_selector" class="nice-select" name="sortby">
+
+                                                @foreach($sort_links as $link)
+                                                    <option data-link="{{$link['link']}}" {{ ($link['is_selected'] ? "selected" : "") }}>{{ $link['name'] }}</option>
+                                                @endforeach
+
                                             </select>
+                                            <script>
+                                                $(function() {
+                                                    $("#sort_selector").change(function() {
+                                                        window.location = $("#sort_selector option:selected").data("link")
+                                                    });
+                                                });
+                                            </script>
                                         </div>
                                     </div>
                                 </div>
@@ -219,7 +224,7 @@
 
                         <!-- start pagination area -->
 
-                        {{ $products->links('pagination') }}
+                        {{ $products->appends(request()->input())->links('pagination') }}
 
                         <!-- end pagination area -->
                     </div>
