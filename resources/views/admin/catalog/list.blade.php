@@ -36,6 +36,7 @@
                         <a href="{{ route('catalog_list', ['product' => 'id', 'order_type' => (isset($_GET['type']) && $_GET['type'] == 'asc') ? 'desc' : 'asc' ]) }}">id</a>
                     </th>
                     <th scope="col" style="width: 80px; text-align: center;">Артикул</th>
+                    <th scope="col" style="text-align: center;">Опубликовано</th>
                     <th scope="col" style="width: 200px; text-align: center;">Фото</th>
                     <th scope="col" style="width: 200px; text-align: center;">Название</th>
                     <th scope="col" style="width: 200px; text-align: center;">Цена/ руб</th>
@@ -44,7 +45,6 @@
                     <th scope="col" style="width: 80px; text-align: center;">Наличие</th>
                     <th scope="col" style="text-align: center;">Категория</th>
                     <th scope="col" style="text-align: center;">Тип изделия</th>
-                    <th scope="col" style="text-align: center;">Опубликовано</th>
                     <th scope="col"></th>
                 </tr>
                 </thead>
@@ -61,6 +61,9 @@
                         </td>
                         <td>{{ $item->id }}</td>
                         <td scope="row" style="max-width: 80px; overflow: hidden; text-align: center;">{{ $item->article }}</td>
+                        <td style="text-align: center;">
+                            {{ $item->published ? 'Да' : 'Нет' }}
+                        </td>
                         <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><img src="{{ \Storage::url($item->image_url)  }}" style="max-width: 100px; max-height: 50px" alt=""></td>
                         <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->name }}</td>
                         <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->price }}</td>
@@ -76,9 +79,6 @@
                             @foreach($types as $type)
                                 {{$type->id == $item->type_id ? "$type->name" : ''}}
                             @endforeach
-                        </td>
-                        <td style="text-align: center;">
-                            {{ $item->published ? 'Да' : 'Нет' }}
                         </td>
                         <td>
                             <a type="button" href="{{route('delete_product', ['id' => $item->id])}}" class="btn btn-outline btn-danger btn-sm" onclick="return confirm('Вы уверены?!')">Удалить</a>

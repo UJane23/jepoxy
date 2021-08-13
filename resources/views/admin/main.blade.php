@@ -6,6 +6,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
+    <!-- Favicon -->
+    <link rel="icon" sizes="256x256" href="/layout/img/New_ProjectJe.ico">
+    
     <title>Админка jepoxy</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
