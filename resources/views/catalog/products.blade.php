@@ -119,7 +119,15 @@
                                             <a href="#" data-target="list-view" data-toggle="tooltip" title="Список"><i class="fa fa-list"></i></a>
                                         </div>
                                         <div class="product-amount">
-                                            <p>Showing 1–16 of 21 results</p>
+
+                                            @if ($products->firstItem() !== $products->lastItem())
+                                                <span>Показано с {{ $products->firstItem() }} - {{ $products->lastItem() }} из {{$products->total()}}</span>
+                                            @elseif ($products->total() == null)
+                                                <span>Нет изделий</span>
+                                            @else
+                                                <span>Показан {{ $products->lastItem() }} из {{$products->total()}} </span>
+                                            @endif
+
                                         </div>
                                     </div>
                                 </div>
