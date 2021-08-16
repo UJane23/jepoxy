@@ -428,7 +428,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="copyright-text text-center">
-                        <p>2021 Магазин изделий из эпоксидной смолы <a href="#">jepoxy</a></p>
+                        <p>2021 Магазин изделий ручной работы из эпоксидной смолы <a href="#">jepoxy</a></p>
                     </div>
                 </div>
             </div>
