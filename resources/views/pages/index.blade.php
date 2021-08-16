@@ -124,7 +124,7 @@
                 <div class="row row-20 mtn-20">
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
-                            <a href="catalog">
+                            <a href="{{ route('show_by_category', ['href_category' => 'pendants']) }}">
                                 <img src="/images/20210802_095631.jpg" style="max-width: 545px; max-height: 250px" alt="product banner">
                             </a>
                             <div class="banner-content text-right">
@@ -136,7 +136,7 @@
                     </div>
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
-                            <a href="#">
+                            <a href="{{ route('show_by_category', ['href_category' => 'accessories']) }}">
                                 <img src="/images/20210802_094600.jpg" style="max-width: 545px; max-height: 250px" alt="product banner">
                             </a>
                             <div class="banner-content text-center">
@@ -148,7 +148,7 @@
                     </div>
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
-                            <a href="#">
+                            <a href="{{ route('show_by_category', ['href_category' => 'blanks']) }}">
                                 <img src="/images/20210802_103748.jpg" style="max-width: 545px; max-height: 250px" alt="product banner">
                             </a>
                             <div class="banner-content text-center">
@@ -160,7 +160,7 @@
                     </div>
                     <div class="col-sm-6">
                         <figure class="banner-statistics mt-20">
-                            <a href="#">
+                            <a href="{{ route('show_by_category', ['href_category' => 'kits']) }}">
                                 <img src="/images/20210802_101614.jpg" style="max-width: 545px; max-height: 250px" alt="product banner">
                             </a>
                             <div class="banner-content text-right">
