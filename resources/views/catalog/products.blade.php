@@ -36,7 +36,7 @@
 
                                     @foreach($categories as $category)
                                         <li><a href="{{ route('show_by_category', array_merge(request()->input(), ['href_category' => $category->href_category])) }}">{{$category->name}}
-                                                <span>
+                                            <span>
                                                ({{$category_data[$category->id] ?? 0}})
                                             </span></a>
                                         </li>

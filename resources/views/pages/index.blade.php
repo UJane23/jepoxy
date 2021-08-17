@@ -210,7 +210,7 @@
                                         <!-- product item start -->
                                             <div class="product-item">
                                                 <figure class="product-thumb">
-                                                    <a href="products/product_detail/{{$product->id}}">
+                                                    <a href="catalog/product_detail/{{$product->id}}">
                                                         <img class="pri-img" src="{{ \Storage::url($product->image_url)  }}" style="max-width: 263px; max-height: 263px" alt="product">
                                                         <img class="sec-img" src="{{ \Storage::url($product->image_url)  }}" style="max-width: 263px; max-height: 263px" alt="product">
                                                     </a>
