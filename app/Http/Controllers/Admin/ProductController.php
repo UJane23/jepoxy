@@ -111,6 +111,8 @@ class ProductController extends Controller
         $item->article = $request->get('article', 0);
         $item->price = $request->get('price', 0);
         $item->preview_text = $request->get('preview_text', 0);
+        $item->size = $request->get('size', 0);
+        $item->material = $request->get('material', 0);
         $item->save();
 
         return \Redirect::route('catalog_list');

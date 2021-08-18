@@ -85,6 +85,22 @@
                 <br>
 
                 <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Размер</label>
+                    <div class="col-sm-7">
+                        <input class="form-control" placeholder="Размер" name="size" maxlength="" value="{{ old('size', $item->size) }}">
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Материалы</label>
+                    <div class="col-sm-7">
+                        <input class="form-control" placeholder="Материалы" name="material" maxlength="" value="{{ old('material', $item->material) }}">
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Наличие</label>
                     <div class="col-sm-7">
                         <input class="form-control" placeholder="Наличие" name="availability" maxlength="" value="{{ old('availability', $item->availability) }}">

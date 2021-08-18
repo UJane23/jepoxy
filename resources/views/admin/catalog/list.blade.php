@@ -36,12 +36,12 @@
                         <a href="{{ route('catalog_list', ['product' => 'id', 'order_type' => (isset($_GET['type']) && $_GET['type'] == 'asc') ? 'desc' : 'asc' ]) }}">id</a>
                     </th>
                     <th scope="col" style="width: 80px; text-align: center;">Артикул</th>
-                    <th scope="col" style="text-align: center;">Опубликовано</th>
-                    <th scope="col" style="width: 200px; text-align: center;">Фото</th>
                     <th scope="col" style="width: 200px; text-align: center;">Название</th>
-                    <th scope="col" style="width: 200px; text-align: center;">Цена/ руб</th>
-                    <th scope="col" style="width: 250px; text-align: center;">Описание изделия</th>
-                    <th scope="col" style="width: 250px; text-align: center;">Краткое описание</th>
+                    <th scope="col" style="width: 200px; text-align: center;">Фото</th>
+                    <th scope="col" style="text-align: center;">Опубликовано</th>
+                    <th scope="col" style="width: 200px; text-align: center;">Цена/руб</th>
+{{--                    <th scope="col" style="width: 250px; text-align: center;">Описание изделия</th>--}}
+{{--                    <th scope="col" style="width: 250px; text-align: center;">Краткое описание</th>--}}
                     <th scope="col" style="width: 80px; text-align: center;">Наличие</th>
                     <th scope="col" style="text-align: center;">Категория</th>
                     <th scope="col" style="text-align: center;">Тип изделия</th>
@@ -61,14 +61,14 @@
                         </td>
                         <td>{{ $item->id }}</td>
                         <td scope="row" style="max-width: 80px; overflow: hidden; text-align: center;">{{ $item->article }}</td>
+                        <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->name }}</td>
+                        <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><img src="{{ \Storage::url($item->image_url)  }}" style="max-width: 100px; max-height: 50px" alt=""></td>
                         <td style="text-align: center;">
                             {{ $item->published ? 'Да' : 'Нет' }}
                         </td>
-                        <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><img src="{{ \Storage::url($item->image_url)  }}" style="max-width: 100px; max-height: 50px" alt=""></td>
-                        <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->name }}</td>
                         <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->price }}</td>
-                        <td style="max-width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->description }}</td>
-                        <td style="max-width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->preview_text }}</td>
+{{--                        <td style="max-width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->description }}</td>--}}
+{{--                        <td style="max-width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->preview_text }}</td>--}}
                         <td style="max-width: 80px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: center;">{{ $item->availability }}</td>
                         <td style="text-align: center;">
                             @foreach($categories as $category)

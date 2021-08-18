@@ -20,6 +20,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $created_ts
  * @property int $price
  * @property string $preview_text
+ * @property string $size
+ * @property string $material
  * @package App\Models
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
@@ -41,6 +43,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Product wherePublished($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Product whereTypeId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Product whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereSize($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereMaterial($value)
  * @mixin \Eloquent
  */
 
