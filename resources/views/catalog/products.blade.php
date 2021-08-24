@@ -169,14 +169,14 @@
                                             <img class="pri-img" src="{{ \Storage::url($product->image_url)  }}" alt="product">
                                             <img class="sec-img" src="/layout/img/product/product-18.jpg" alt="product">
                                         </a>
-                                        <div class="button-group">
-                                            <a href="wishlist.html" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="pe-7s-like"></i></a>
-                                            <a href="compare.html" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i class="pe-7s-refresh-2"></i></a>
-                                            <a href="#" data-toggle="modal" data-target="#quick_view"><span data-toggle="tooltip" data-placement="left" title="Quick View"><i class="pe-7s-search"></i></span></a>
-                                        </div>
-                                        <div class="cart-hover">
-                                            <button class="btn btn-cart">add to cart</button>
-                                        </div>
+{{--                                        <div class="button-group">--}}
+{{--                                            <a href="wishlist.html" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="pe-7s-like"></i></a>--}}
+{{--                                            <a href="compare.html" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i class="pe-7s-refresh-2"></i></a>--}}
+{{--                                            <a href="#" data-toggle="modal" data-target="#quick_view"><span data-toggle="tooltip" data-placement="left" title="Quick View"><i class="pe-7s-search"></i></span></a>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="cart-hover">--}}
+{{--                                            <button class="btn btn-cart">add to cart</button>--}}
+{{--                                        </div>--}}
                                     </figure>
                                     <div class="product-caption text-center">
                                         <div class="product-identity">
@@ -202,14 +202,14 @@
                                             <img class="pri-img" src="/layout/img/product/product-1.jpg" alt="product">
                                             <img class="sec-img" src="/layout/img/product/product-18.jpg" alt="product">
                                         </a>
-                                        <div class="button-group">
-                                            <a href="wishlist.html" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="pe-7s-like"></i></a>
-                                            <a href="compare.html" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i class="pe-7s-refresh-2"></i></a>
-                                            <a href="#" data-toggle="modal" data-target="#quick_view"><span data-toggle="tooltip" data-placement="left" title="Quick View"><i class="pe-7s-search"></i></span></a>
-                                        </div>
-                                        <div class="cart-hover">
-                                            <button class="btn btn-cart">add to cart</button>
-                                        </div>
+{{--                                        <div class="button-group">--}}
+{{--                                            <a href="wishlist.html" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="pe-7s-like"></i></a>--}}
+{{--                                            <a href="compare.html" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i class="pe-7s-refresh-2"></i></a>--}}
+{{--                                            <a href="#" data-toggle="modal" data-target="#quick_view"><span data-toggle="tooltip" data-placement="left" title="Quick View"><i class="pe-7s-search"></i></span></a>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="cart-hover">--}}
+{{--                                            <button class="btn btn-cart">add to cart</button>--}}
+{{--                                        </div>--}}
                                     </figure>
                                     <div class="product-content-list">
                                         <div class="manufacturer-name">
