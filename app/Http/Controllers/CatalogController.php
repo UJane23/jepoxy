@@ -82,7 +82,7 @@ class CatalogController extends Controller
             'products' => $products,
             'category_data' => $category_data,
             'currentRoute' => $currentRoute,
-            "sort_links" => $sortLinks,
+            'sort_links' => $sortLinks,
         ]);
     }
 
@@ -132,9 +132,12 @@ class CatalogController extends Controller
 
     public function detail($id) {
         $item = Product::findOrFail($id);
+        $products = Product::where('published', '=', '1')->get();
+
         /* @var $item Product*/
         return \View::make('catalog.product_detail', [
             'item' => $item,
+            'products' => $products,
         ]);
     }
 
