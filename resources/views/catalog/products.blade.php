@@ -97,7 +97,7 @@
                         <div class="sidebar-banner">
                             <div class="img-container">
                                 <a href="#">
-                                    <img src="/layout/img/banner/sidebar-banner.jpg" alt="">
+                                    <img src="/images/sidebar-banner.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -115,8 +115,8 @@
                                 <div class="col-lg-7 col-md-6 order-2 order-md-1">
                                     <div class="top-bar-left">
                                         <div class="product-view-mode">
-                                            <a class="active" href="#" data-target="grid-view" data-toggle="tooltip" title="Сетка"><i class="fa fa-th"></i></a>
-                                            <a href="#" data-target="list-view" data-toggle="tooltip" title="Список"><i class="fa fa-list"></i></a>
+                                            <a class="active" href="" data-target="grid-view" data-toggle="tooltip" title="Сетка"><i class="fa fa-th"></i></a>
+                                            <a href="" data-target="list-view" data-toggle="tooltip" title="Список"><i class="fa fa-list"></i></a>
                                         </div>
                                         <div class="product-amount">
 
@@ -195,11 +195,11 @@
                                 </div>
                                 <!-- product grid end -->
 
-                                <!-- product list item end -->
+                                <!-- product list item start -->
                                 <div class="product-list-item">
                                     <figure class="product-thumb">
-                                        <a href="product-details.html">
-                                            <img class="pri-img" src="/layout/img/product/product-1.jpg" alt="product">
+                                        <a href="/catalog/product_detail/{{$product->id}}">
+                                            <img class="pri-img" src="{{ \Storage::url($product->image_url)  }}" alt="product">
                                             <img class="sec-img" src="/layout/img/product/product-18.jpg" alt="product">
                                         </a>
 {{--                                        <div class="button-group">--}}
@@ -215,7 +215,7 @@
                                         <div class="manufacturer-name">
                                             <a href="product-details.html">{{$product->category === null ? ‘’ :$product->category->name}}</a>
                                         </div>
-                                        <h5 class="product-name"><a href="product-details.html">{{$product->name}}</a></h5>
+                                        <h5 class="product-name"><a href="/catalog/product_detail/{{$product->id}}">{{$product->name}}</a></h5>
                                         <div class="price-box">
                                             <span class="price-regular">{{$product->price}} р</span>
                                         </div>

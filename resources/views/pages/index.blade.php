@@ -231,7 +231,7 @@
                                                         <span>Арт. {{$product->article}}</span>
                                                     </div>
                                                     <h6 class="product-name">
-                                                        <a href="product-details.html">{{$product->name}}</a>
+                                                        <a href="/catalog/product_detail/{{$product->id}}">{{$product->name}}</a>
                                                     </h6>
                                                     <div class="price-box">
                                                         <span class="price-regular">{{$product->price}} р</span>
