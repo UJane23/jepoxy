@@ -18,12 +18,18 @@ Route::group(['prefix' =>'personal'], function (){
     Route::get('/cart', ['as' => 'cart_personal', 'uses' => 'PersonalController@cart']);
 });
 
-//Route::group(['prefix' =>'admin'], function (){
-//    Route::get('/', ['as' => 'admin', 'uses' => 'Admin\AdminController@index']);
-//
-//    Route::get('/catalog', ['as' => 'catalog_list', 'uses' => 'Admin\ProductController@index']);
-//    Route::get('/catalog/new', ['as' => 'new_product', 'uses' => 'Admin\ProductController@new']);
-//    Route::get('/catalog/edit/{id}', ['as' => 'edit_product', 'uses' => 'Admin\ProductController@edit']);
-//    Route::post('/catalog/save', ['as' => 'save_product', 'uses' => 'Admin\ProductController@save']);
-//    Route::get('/catalog/delete/{id}', ['as' => 'delete_product', 'uses' => 'Admin\ProductController@delete']);
-//});
+Route::group(['prefix' =>'admin', 'middleware' => 'auth'], function (){
+    Route::get('/', ['as' => 'admin', 'uses' => 'Admin\AdminController@index']);
+
+    Route::get('/catalog', ['as' => 'catalog_list', 'uses' => 'Admin\ProductController@index']);
+    Route::get('/catalog/new', ['as' => 'new_product', 'uses' => 'Admin\ProductController@new']);
+    Route::get('/catalog/edit/{id}', ['as' => 'edit_product', 'uses' => 'Admin\ProductController@edit']);
+    Route::post('/catalog/save', ['as' => 'save_product', 'uses' => 'Admin\ProductController@save']);
+    Route::get('/catalog/delete/{id}', ['as' => 'delete_product', 'uses' => 'Admin\ProductController@delete']);
+});
+
+Auth::routes(['register' => false]);
+Route::get('/password/reset', ['uses' => 'LayoutController22@index']);
+Route::post('/password/reset', ['uses' => 'LayoutController22@index']);
+
+//Route::get('/home', 'HomeController@index')->name('home');

@@ -8,7 +8,7 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <!-- Favicon -->
     <link rel="icon" sizes="256x256" href="/layout/img/New_ProjectJe.ico">
-    
+
     <title>Админка jepoxy</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
@@ -40,9 +40,16 @@
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/admin">jepoxy</a>
     <input class="form-control form-control-dark w-100" type="text" placeholder="Поиск" aria-label="Search">
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none" style="display: none">
+        @csrf
+    </form>
     <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-            <a class="nav-link" href="#">Sign out</a>
+            <a class="nav-link" href="{{ route('logout') }}"
+               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                Sign out
+            </a>
         </li>
     </ul>
 </nav>
