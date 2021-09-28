@@ -211,8 +211,8 @@
                                             <div class="product-item">
                                                 <figure class="product-thumb">
                                                     <a href="catalog/product_detail/{{$product->id}}">
-                                                        <img class="pri-img" src="{{ \Storage::url($product->image_url)  }}" style="max-width: 263px; max-height: 263px" alt="product">
-                                                        <img class="sec-img" src="{{ \Storage::url($product->image_url)  }}" style="max-width: 263px; max-height: 263px" alt="product">
+                                                        <img class="pri-img" src="{{ \Storage::url($product->image_url)  }}" alt="product">
+                                                        <img class="sec-img" src="{{ \Storage::url($product->image_url)  }}" alt="product">
                                                     </a>
 {{--                                                    <div class="button-group">--}}
 {{--                                                        <a href="wishlist.html" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="pe-7s-like"></i></a>--}}
