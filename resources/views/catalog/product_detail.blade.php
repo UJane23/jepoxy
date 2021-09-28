@@ -401,7 +401,7 @@
                                 </figure>
                                 <div class="product-caption text-center">
                                     <div class="product-identity">
-                                        <p class="manufacturer-name"><a href="product-details.html">{{$product->category === null ? ‘’ :$product->category->name}}</a></p>
+                                        <p class="manufacturer-name">{{$product->category === null ? ‘’ :$product->category->name}}</p>
                                     </div>
                                     <div class="pro">
                                         <span>Арт. {{$product->article}}</span>
